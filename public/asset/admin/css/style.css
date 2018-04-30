@@ -1,0 +1,16 @@
+.text-show {
+    width: 64.5%;
+    height: 33px;
+}
+
+.button-upload {
+    margin-top: -4px;
+}
+
+#hall input[type="file"]{
+    display: none;
+}
+
+#hall #image-preview {
+    margin-top: 10px;
+}

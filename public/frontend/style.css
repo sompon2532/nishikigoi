@@ -1,0 +1,96 @@
+.wrapper {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.logo-box {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-bottom: 20px;
+}
+
+.right-box {
+    border: 1px solid #ff0000;
+}
+
+.fc-ltr .fc-basic-view .fc-day-number {
+    text-align: center;
+}
+
+.fc-day-grid-container.fc-scroller {
+    height: 100% !important;
+}
+
+.fc-basic-view tbody .fc-row {
+    min-height: 3em;
+}
+
+.fc td,
+.fc th {
+    border-style: none;
+}
+
+.midle-box {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+}
+
+.in-midle-box {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .in-midle-box .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+} */
+
+span.stat {
+    border: 1px solid #ff0000;
+    padding: 10px 20px;
+    line-height: 50px;
+}
+
+.left-box {
+    border: 1px solid #ff0000;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.left-box .icon {
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.red-line {
+    border-top: 1px solid #ff0000;
+}
+
+@media (min-width: 768px) {
+    .equal,
+    .equal>div[class*='col-'] {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+    }
+}

@@ -10,7 +10,70 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['namespace' => 'Frontend'], function() {
+    Route::get('/', 'HomeController@Index');
 
-Route::get('/', function () {
-    return view('welcome');
+<<<<<<< HEAD
+    Route::get('/test', function () {
+        //    return view('welcome');
+            return view('frontend.index');
+        });
 });
+=======
+
+Route::group(['prefix' => 'admin'], function() {
+    Route::middleware('auth:admin')->namespace('Backoffice')->group(function() {
+        Route::get('/', [
+            'as'   => 'admin.index',
+            'uses' => 'AdminController@getIndex'
+        ]);
+
+        Route::resource('koi', 'KoiController');
+        Route::resource('store', 'StoreController');
+        Route::resource('farm', 'FarmController');
+        Route::resource('strain', 'StrainController');
+        Route::resource('category', 'CategoryController');
+        Route::resource('news', 'NewsController');
+
+        Route::get('event/{event}/koi/{koi}/winner/{user}', [
+            'as'   => 'event.koi.winner',
+            'uses' => 'EventController@setWinner'
+        ]);
+        Route::get('event/{event}/koi/{koi}', [
+            'as'   => 'event.koi.detail',
+            'uses' => 'EventController@showKoiDetail'
+        ]);
+        Route::resource('event', 'EventController');
+
+        Route::get('user/{user}/order', [
+            'as'   => 'user.order',
+            'uses' => 'UserController@getOrder'
+        ]);
+        Route::get('user/{user}/koi', [
+            'as'   => 'user.koi',
+            'uses' => 'UserController@getKoi'
+        ]);
+        Route::resource('user', 'UserController');
+    });
+
+    Route::group(['namespace' => 'Admin'], function() {
+        Route::get('login', [
+            'as'   => 'admin.login',
+            'uses' => 'LoginController@showLoginForm'
+        ]);
+
+        Route::post('login', [
+            'uses' => 'LoginController@login'
+        ]);
+
+        Route::get('register', [
+            'as'   => 'admin.register',
+            'uses' => 'RegisterController@showRegistrationForm'
+        ]);
+
+        Route::post('register', [
+            'uses' => 'RegisterController@register'
+        ]);
+    });
+});
+>>>>>>> 161ace9c87a7129b6e8bd0701b2c9aef9b0398b8
