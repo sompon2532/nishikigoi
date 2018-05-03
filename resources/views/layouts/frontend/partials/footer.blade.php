@@ -7,16 +7,14 @@
 <div class="col-md-6">
     <div class="midle-box">
         <div class="text-center in-midle-box">
-            <div class="center">
-                <h4>ABOUT US</h4>
-                <p>KOIKICHI FISH FARM</p>
-                <P>WE ARE A MEMBER OF</P>
-                <P>ALL JAPAN NISHIKIGOI PROMOTION ASSOCIATION</P>
-        
-                <span class="stat">
-                   <img src="{{ asset('frontend/Icon/Stat.png')}}" alt="" width="20px"> 0001234
-                </span>
-            </div>
+            <h4>ABOUT US</h4>
+            <p>KOIKICHI FISH FARM</p>
+            <P>WE ARE A MEMBER OF</P>
+            <P>ALL JAPAN NISHIKIGOI PROMOTION ASSOCIATION</P>
+    
+            <span class="stat">
+                <img src="{{ asset('frontend/Icon/Stat.png')}}" alt="" width="20px"> 0001234
+            </span>
         </div>
     </div>
 

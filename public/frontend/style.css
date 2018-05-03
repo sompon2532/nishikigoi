@@ -6,7 +6,25 @@
 }
 
 .logo-box {
+    display: inline-block;
+    padding: 0 15px 15px 15px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-event {
+    float: left;
+}
+
+.btn-partner {
+    float: right;
+}
+
+.btn-event {
+    margin-right: 5px;
+}
+
+.btn-partner {
+    margin-left: 5px;
 }
 
 .content-wrapper {
@@ -53,17 +71,6 @@ footer {
     height: 100%;
 }
 
-
-/* .in-midle-box .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 100%;
-} */
-
 span.stat {
     border: 1px solid #ff0000;
     padding: 10px 20px;
@@ -84,6 +91,98 @@ span.stat {
 
 .red-line {
     border-top: 1px solid #ff0000;
+}
+
+.title {
+    min-height: 90px;
+    padding-top: 2px;
+    margin-top: 10px;
+    background-image: url('/frontend/img/Title.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.title h1 {
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 0 0 10px #333;
+    margin-top: 10px;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card img {
+    max-height: 150px;
+}
+
+.text-red {
+    color: #f00;
+}
+
+.btn-white {
+    color: #f00;
+    background-color: #fff;
+    border-color: #f00;
+    border-radius: 0px;
+}
+
+.btn-white.focus,
+.btn-white:focus,
+.btn-white:hover {
+    color: #fff;
+    background-color: #f00;
+    text-decoration: none;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    /* margin: 100px auto; */
+}
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slide iframe {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: red;
+}
+
+.slick-slide {
+    transition: all ease-in-out .1s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+.partner-sj {
+    display: block;
+    width: 150px;
+    float: left;
+}
+
+.center-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 @media (min-width: 768px) {
