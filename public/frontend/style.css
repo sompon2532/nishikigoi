@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'thaisans_neueregular';
+    src: url('font/thaisansneue-regular-webfont.eot');
+    src: url('font/thaisansneue-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/thaisansneue-regular-webfont.woff2') format('woff2'), url('font/thaisansneue-regular-webfont.woff') format('woff'), url('font/thaisansneue-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    font-family: "thaisans_neueregular", "Helvetica Neue", Helvetica, Arial, sans-serif, Prompt;
+    font-size: 1.1em;
+    /* font-size: 20px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #fff; */
+}
+
 .wrapper {
     height: 100%;
     position: relative;
@@ -11,12 +29,18 @@
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 }
 
+
+/* .event-box,
+.partner-box {
+    width: 50%;
+} */
+
 .btn-event {
-    float: left;
+    float: right;
 }
 
 .btn-partner {
-    float: right;
+    float: left;
 }
 
 .btn-event {
@@ -27,9 +51,16 @@
     margin-left: 5px;
 }
 
-.content-wrapper {
+
+/* .content-wrapper {
     margin-top: 10px;
     margin-bottom: 10px;
+} */
+
+.content-box {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -38,6 +69,39 @@ footer {
 
 .right-box {
     border: 1px solid #ff0000;
+}
+
+
+/* calendar */
+
+.fc-toolbar {
+    color: #f00;
+    margin-top: 1em;
+}
+
+.fc-toolbar .fc-left .fc-state-default,
+.fc-toolbar .fc-right .fc-state-default {
+    background-color: #fff;
+    background-image: -moz-linear-gradient(top, #fff, #fff);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fff));
+    background-image: -webkit-linear-gradient(top, #fff, #fff);
+    background-image: -o-linear-gradient(top, #fff, #fff);
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-repeat: repeat-x;
+    border-color: #fff #fff #fff;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    color: #f00;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0);
+}
+
+.fc button {
+    padding: 0;
+}
+
+.fc-toolbar h2 {
+    /* font-size: 20px; */
+    margin-top: 2px;
 }
 
 .fc-ltr .fc-basic-view .fc-day-number {
@@ -49,12 +113,31 @@ footer {
 }
 
 .fc-basic-view tbody .fc-row {
-    min-height: 3em;
+    min-height: 1em;
 }
 
 .fc td,
-.fc th {
+.fc th,
+.fc td.fc-today {
     border-style: none;
+    font-weight: normal;
+}
+
+td.fc-day-number.fc-today {
+    background: none;
+    text-align: center;
+    border: 1px solid #ff0000 !important;
+    border-radius: 50%;
+    display: block;
+}
+
+.fc-unthemed .fc-today {
+    background: #fff;
+}
+
+span.fc-title,
+span.fc-time {
+    display: none;
 }
 
 .midle-box {
@@ -81,6 +164,7 @@ span.stat {
     border: 1px solid #ff0000;
     padding-top: 40px;
     padding-bottom: 10px;
+    display: inline-block;
 }
 
 .left-box .icon {
@@ -91,6 +175,21 @@ span.stat {
 
 .red-line {
     border-top: 1px solid #ff0000;
+}
+
+.carousel-control {
+    opacity: unset;
+}
+
+.slide .glyphicon-menu-left,
+.slide .glyphicon-menu-right {
+    color: #f00;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
 }
 
 .title {
@@ -111,6 +210,7 @@ span.stat {
 
 .card {
     border-radius: 0;
+    margin-bottom: 15px;
 }
 
 .card img {
@@ -119,6 +219,11 @@ span.stat {
 
 .text-red {
     color: #f00;
+}
+
+.btn {
+    font-size: 1em;
+    padding: 0px 15px;
 }
 
 .btn-white {
@@ -140,6 +245,11 @@ span.stat {
     width: 100%;
     margin: auto;
     /* margin: 100px auto; */
+}
+
+.slider-nav,
+.slider-for {
+    width: 90%;
 }
 
 .slick-slide {
@@ -172,6 +282,11 @@ span.stat {
     opacity: 1;
 }
 
+.video-box {
+    width: 95%;
+    margin: 15px auto;
+}
+
 .partner-sj {
     display: block;
     width: 150px;
@@ -183,6 +298,11 @@ span.stat {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+a p {
+    color: #000;
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {

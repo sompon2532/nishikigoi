@@ -7,6 +7,7 @@ use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
+use Calendar;
 
 class Event extends Model implements HasMedia
 {
@@ -65,5 +66,27 @@ class Event extends Model implements HasMedia
     public function videos()
     {
         return $this->morphMany(Video::class, 'videotable');
+    }
+
+    public function getEvent(){
+        $events = [];
+        $calendar = Calendar::addEvents($events);
+        $calendar->setOptions([
+            'locale' => config('app.locale'),
+            'views' => [ 
+                'month' => [ // name of view
+                    'columnFormat' => 'dd'
+                ]
+            ], 
+            'header' => [
+                'left'  => 'prev',
+                'center'=> 'title',
+                'right' => 'next'
+            ],
+            'eventLimit' => 0,
+
+        ]);
+
+        return $calendar;
     }
 }

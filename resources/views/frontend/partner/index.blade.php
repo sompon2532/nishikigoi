@@ -19,34 +19,42 @@
     </div>
     <div class="col-sm-4 col-md-4">
         <div class="card text-center">
-            <img src="{{ asset('frontend/Icon/Thailand-S.png') }}" alt="...">
-            <div class="caption">
-                <p>THAILAND</p>
-            </div>
+            <a href="{{ url('partner/TH') }}">            
+                <img src="{{ asset('frontend/Icon/Thailand-S.png') }}" alt="...">
+                <div class="caption">
+                    <p>THAILAND</p>
+                </div>
+            </a>
         </div>
     </div>
     <div class="col-sm-4 col-md-4">
         <div class="card text-center">
-            <img src="{{ asset('frontend/Icon/Indonesia-S.png') }}" alt="...">
-            <div class="caption">
-                <p>INDONESIA</p>
-            </div>
+            <a href="{{ url('partner/ID') }}">
+                <img class="" src="{{ asset('frontend/Icon/Indonesia-S.png') }}" alt="...">
+                <div class="caption">
+                    <p>INDONESIA</p>
+                </div>
+            </a>
         </div>
     </div>
     <div class="col-sm-4 col-md-3">
         <div class="card text-center">
-            <img src="{{ asset('frontend/Icon/Singapore-S.png') }}" alt="...">
-            <div class="caption">
-                <p>SINGAPORE</p>
-            </div>
+            <a href="{{ url('partner/SG') }}">
+                <img src="{{ asset('frontend/Icon/Singapore-S.png') }}" alt="...">
+                <div class="caption">
+                    <p>SINGAPORE</p>
+                </div>
+            </a>
         </div>
     </div>
     <div class="col-sm-4 col-md-3">
         <div class="card text-center">
-            <img src="{{ asset('frontend/Icon/Japan-S.png') }}" alt="...">
-            <div class="caption">
-                <p>JAPAN</p>
-            </div>
+            <a href="{{ url('partner/JP') }}">            
+                <img src="{{ asset('frontend/Icon/Japan-S.png') }}" alt="...">
+                <div class="caption">
+                    <p>JAPAN</p>
+                </div>
+            </a>
         </div>
     </div>
 </div>

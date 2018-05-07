@@ -4,16 +4,23 @@ namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Eventday;
 
 class PartnerController extends Controller
 {
     public function Index()
     {
-        return view('frontend.partner.index');
+        $eventdays  = new Eventday();
+        $calendar   = $eventdays->calendar;
+
+        return view('frontend.partner.index', compact('calendar'));
     }
 
     public function getDetail()
     {
-        return view('frontend.partner.detail');
+        $eventdays  = new Eventday();
+        $calendar   = $eventdays->calendar;
+
+        return view('frontend.partner.detail', compact('calendar'));
     }
 }

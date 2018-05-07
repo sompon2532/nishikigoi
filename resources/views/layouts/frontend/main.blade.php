@@ -27,17 +27,17 @@
                 </div>
             </div>
         </header>
-        <div class="content-wrapper">
+        <!-- <div class="content-wrapper"> -->
             <section class="content">
-                <div class="container">
+                <div class="container content-box">
                     @yield('content')
                 </div>
             </section>
-        </div>
+        <!-- </div> -->
         <footer>
             <div class="container">
                 <div class="row equal">
-                    {{-- @include('layouts.frontend.partials.footer') --}}
+                    @include('layouts.frontend.partials.footer')
                 </div>
             </div>
         </footer>
@@ -53,7 +53,7 @@
     <!-- Slick -->
     <script src="{{ asset('plugins/slick/slick.min.js') }}"></script>
     <!-- Calendar -->
-    {{-- {!! $calendar->script() !!} --}}
+    {!! $calendar->script() !!}
     <!-- Main script -->
     <script src="{{ asset('frontend/script.js') }}"></script>
     @stack('scripts')
