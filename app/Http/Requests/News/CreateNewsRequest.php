@@ -24,7 +24,6 @@ class CreateNewsRequest extends FormRequest
     public function rules()
     {
         return [
-            'th.name' => 'required',
             'en.name' => 'required',
             'start_date' => 'required',
             'end_date' => 'required',

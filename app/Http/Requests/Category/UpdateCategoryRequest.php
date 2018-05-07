@@ -26,7 +26,6 @@ class UpdateCategoryRequest extends FormRequest
         $category = $this->category;
 
         return [
-            'th.name' => 'required',
             'en.name' => 'required',
         ];
     }

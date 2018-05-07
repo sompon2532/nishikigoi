@@ -48,7 +48,23 @@ class Koi extends Model implements HasMedia
     /**
      * @var array
      */
-    public $fillable = ['koi_id', 'farm_id', 'strain_id', 'store_id', 'hall_of_fame_id', 'certificate', 'born', 'oyagoi', 'sex', 'user_id', 'storage', 'price', 'category_id', 'slug', 'event_id'];
+    public $fillable = [
+        'koi_id',
+        'farm_id',
+        'strain_id',
+        'store_id',
+        'hall_of_fame_id',
+        'certificate',
+        'born',
+        'oyagoi',
+        'sex',
+        'user_id',
+        'storage',
+        'price',
+        'category_id',
+        'slug',
+        'event_id'
+    ];
 
     /**
      * Get all of the post's remarks.
@@ -92,16 +108,6 @@ class Koi extends Model implements HasMedia
         return $media ? url($media->getUrl()) : null;
     }
 
-    public function users()
-    {
-        return $this->belongsToMany('App\User');
-    }
-
-    public function user()
-    {
-        return $this->belongsTo('App\User');
-    }
-
     public function strain()
     {
         return $this->belongsTo('App\Models\Strain', 'strain_id');
@@ -117,17 +123,12 @@ class Koi extends Model implements HasMedia
         return $this->belongsTo('App\Models\Event', 'event_id');
     }
 
-    public function userss()
-    {
-        return $this->morphToMany('App\User', 'favorite');
-    }
-
-    public function hallOfFames() {
-        return $this->belongsToMany(HallOfFame::class);
-    }
-
     public function store() {
         return $this->belongsTo(Store::class);
+    }
+
+    public function register() {
+        return $this->hasMany(Register::class);
     }
 
 }

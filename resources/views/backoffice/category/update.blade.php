@@ -32,12 +32,12 @@
                 <div class="box-body">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="nameTh" class="col-sm-3 control-label">
-                                ชื่อ (TH) <span class="text-danger">*</span>
+                            <label for="nameEn" class="col-sm-3 control-label">
+                                ชื่อ <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="th[name]"
-                                       value="{{ $category->translate('th')->name }}" id="nameTh" placeholder="Name TH">
+                                <input type="text" class="form-control" name="en[name]"
+                                       value="{{ $category->translate('en')->name }}" id="nameEn" placeholder="Name">
                             </div>
                         </div>
 
@@ -45,7 +45,6 @@
                             <label for="group" class="col-sm-3 control-label">กลุ่ม</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="group" id="group" v-model="group">
-                                    <option value="product" {{ $category->group == 'product' ? 'selected' : '' }}>Product</option>
                                     <option value="koi" {{ $category->group == 'koi' ? 'selected' : '' }}>Koi</option>
                                 </select>
                             </div>
@@ -63,16 +62,6 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="nameEn" class="col-sm-3 control-label">
-                                ชื่อ (EN) <span class="text-danger">*</span>
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" name="en[name]"
-                                       value="{{ $category->translate('en')->name }}" id="nameEn" placeholder="Name EN">
-                            </div>
-                        </div>
-
                         <div class="form-group">
                             <label for="category" class="col-sm-3 control-label">หมวดหมู่หลัก</label>
                             <div class="col-sm-9">

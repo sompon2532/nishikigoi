@@ -24,7 +24,6 @@ class CreateKoiRequest extends FormRequest
     public function rules()
     {
         return [
-            'th.name' => 'required',
             'en.name' => 'required',
             'koi_id' => 'required',
             'oyagoi' => 'required',
