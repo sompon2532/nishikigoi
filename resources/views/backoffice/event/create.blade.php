@@ -32,12 +32,12 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="nameEn" class="col-sm-3 control-label">
-                                ชื่อ (EN) <span class="text-danger">*</span>
+                                ชื่อ <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="en[name]" value="{{ old('en.name') }}"
                                        id="nameEn"
-                                       placeholder="ชื่ออังกฤษ">
+                                       placeholder="Name">
                             </div>
                         </div>
 

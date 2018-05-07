@@ -23,7 +23,7 @@ class KoiController extends Controller
      */
     public function index()
     {
-        $kois = Koi::with('user')->get();
+        $kois = Koi::get();
 
         return view('backoffice.koi.index', compact('kois'));
     }

@@ -57,4 +57,16 @@
             <i class="fa fa-archive"></i> <span>ปลา</span>
         </a>
     </li>
+
+    <li>
+        <a href="{{ route('country.index') }}">
+            <i class="fa fa-globe"></i> <span>ประเทศ</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="{{ route('partner.index') }}">
+            <i class="fa fa-handshake-o"></i> <span>Partner</span>
+        </a>
+    </li>
 </ul>

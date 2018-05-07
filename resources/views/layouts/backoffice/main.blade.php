@@ -35,13 +35,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/css/dataTables.bootstrap.min.css">
     <!-- main style -->
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <!-- Multiselect -->
+    <link rel="stylesheet" href="{{ asset("multiselect/css/bootstrap-multiselect.css") }}">
 
     <link rel="stylesheet" href="{{ URL::asset('asset/admin/css/style.css') }}" media="screen" title="no title" charset="utf-8">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+    <!-- <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></link> -->
     <!-- <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
     <![endif]-->
     
@@ -138,6 +140,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.5/sweetalert2.all.min.js"></script>
 <!-- Datatable -->
 <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<!-- Multiselect -->
+<script src="{{ asset("multiselect/js/bootstrap-multiselect.js") }}"></script>
 <!-- Vue -->
 <script src="{{ asset('plugins/vue/vue.js') }} "></script>
 

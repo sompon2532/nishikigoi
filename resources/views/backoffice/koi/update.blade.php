@@ -31,12 +31,12 @@
                 <div class="box-body">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="nameTh" class="col-sm-3 control-label">
-                                ชื่อ (TH) <span class="text-danger">*</span>
+                            <label for="nameEn" class="col-sm-3 control-label">
+                                ชื่อ <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="th[name]" value="{{ $koi->translate('th')->name }}" id="nameTh"
-                                       placeholder="Name TH">
+                                <input type="text" class="form-control" name="en[name]" value="{{ $koi->translate('en')->name }}" id="nameEn"
+                                       placeholder="Name">
                             </div>
                         </div>
 
@@ -117,16 +117,6 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="nameEn" class="col-sm-3 control-label">
-                                ชื่อ (EN) <span class="text-danger">*</span>
-                            </label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" name="en[name]" value="{{ $koi->translate('en')->name }}" id="nameEn"
-                                       placeholder="Name EN">
-                            </div>
-                        </div>
-
                         <div class="form-group">
                             <label for="event" class="col-sm-3 control-label">อีเว้นท์</label>
                             <div class="col-sm-9">

@@ -33,6 +33,7 @@
 
             <div class="row">
                 <div class="col-xs-12">
+                    <a class="btn btn-sm btn-primary pull-right" style="margin-bottom: 10px;">เพิ่มรายชื่อผู้ลงทะเบียน</a>
                     <table id="example2" class="table table-bordered table-hover">
                         <thead>
                         <tr>
@@ -43,12 +44,12 @@
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($koi->users as $index => $user)
+                        @foreach ($koi->register as $index => $register)
                             <tr>
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{ $user->name }}</td>
                                 <td>
-                                    @if ($koi->user_id == $user->id)
+                                    @if ($register->winder)
                                         <span class="label label-success">
                                             <i class="fa fa-trophy"></i> ได้รับรางวัล
                                         </span>
@@ -57,13 +58,13 @@
                                     @endif
                                 </td>
                                 <td>
-                                    @if ($koi->user_id == $user->id)
-                                        <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'user' => $user->id]) }}" class="btn btn-xs btn-danger">
-                                            <i class="fa fa-ban"></i> ยกเลิก
-                                        </a>
-                                    @else
-                                        <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'user' => $user->id]) }}" class="btn btn-xs btn-default">รับรางวัล</a>
-                                    @endif
+                                    {{--@if ($koi->user_id == $user->id)--}}
+                                        {{--<a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'user' => $user->id]) }}" class="btn btn-xs btn-danger">--}}
+                                            {{--<i class="fa fa-ban"></i> ยกเลิก--}}
+                                        {{--</a>--}}
+                                    {{--@else--}}
+                                        {{--<a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'user' => $user->id]) }}" class="btn btn-xs btn-default">รับรางวัล</a>--}}
+                                    {{--@endif--}}
                                 </td>
                             </tr>
                         @endforeach

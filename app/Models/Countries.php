@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
+use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
 
-class Farm extends Model
+class Countries extends Model implements HasMedia
 {
-    use SoftDeletes;
+    use SoftDeletes, HasMediaTrait;
 
     /**
      * The attributes that should be cast to native types.

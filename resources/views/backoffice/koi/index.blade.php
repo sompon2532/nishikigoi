@@ -26,7 +26,6 @@
                     <tr>
                         <th>รหัสปลา</th>
                         <th>ปลา</th>
-                        <th>เจ้าของปลา</th>
                         <th>สถานะ</th>
                         <th>การจัดการ</th>
                     </tr>
@@ -36,7 +35,6 @@
                         <tr>
                             <td>{{ $koi->koi_id }}</td>
                             <td>{{ $koi->name }}</td>
-                            <td>{{ $koi->user ? $koi->user->name : 'Koikichi Farm'  }}</td>
                             <td>{{ $koi->status ? 'Active' : 'Inactive' }}</td>
                             <td>
                                 <a href="{{ route('koi.edit', ['koi' => $koi->id]) }}"
@@ -52,7 +50,6 @@
                     <tr>
                         <th>รหัสปลา</th>
                         <th>ปลา</th>
-                        <th>เจ้าของปลา</th>
                         <th>สถานะ</th>
                         <th>การจัดการ</th>
                     </tr>

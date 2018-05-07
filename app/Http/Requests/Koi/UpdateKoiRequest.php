@@ -26,7 +26,6 @@ class UpdateKoiRequest extends FormRequest
         $koi = $this->koi;
 
         return [
-            'th.name' => 'required',
             'en.name' => 'required',
             'koi_id' => 'required',
             'oyagoi' => 'required',
