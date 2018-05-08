@@ -13,33 +13,45 @@
             <div class="title">
                 <h1>EVENT</h1>
             </div>
-            <p>CHUKOKU AUCTION WEEK</p>
-            <P>16-22 SEPTEMBER 17</P>
         </div>
     </div>
-    <div class="col-md-offset-2 col-md-8">
-        <!-- Video -->
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" 
-                src="https://player.vimeo.com/video/66079654?autoplay=0&loop=1&color=fc0328&title=0&portrait=0">
-            </iframe>
-            <!-- <div style="padding:56.25% 0 0 0;position:relative;">
-                    <iframe src="https://player.vimeo.com/video/66079654?autoplay=1&loop=1&color=fc0328&title=0&portrait=0" 
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                    </iframe>
+
+    @foreach($nowEvents as $event)
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}">
+                        <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="...">
+                    </a>
                 </div>
-                <script src="https://player.vimeo.com/api/player.js"></script> -->
-        </div>
-    </div>
-<!-- </div>
-<div class="row"> -->
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-red">New Event!</h1>
+                <p>{{ $event->name }}</p>
+            </div>
+        </div>    
+    @endforeach
+
     <div class="col-md-12">
         <div class="title text-center">
-            <h1>KOI</h1>
+            <h1>PASS EVENT</h1>
         </div>
     </div>
-    @for($i=1; $i<=10; $i++)
+
+    @foreach($passEvents as $event)
+        <div class="col-md-4">
+            <div class="card text-center">
+                <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}" class="text-link">
+                    <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="...">
+                    <div class="caption">
+                        <h3 class="text-red">{{ $event->name }}</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    @endforeach
+    
+    <!-- {{-- @for($i=1; $i<=10; $i++)
     <div class="col-sm-4 col-md-3">
         <div class="card text-center">
             <img src="{{ asset('frontend/img/img-demo-koi.jpg') }}" alt="...">
@@ -50,7 +62,7 @@
             </div>
         </div>
     </div>
-    @endfor
+    @endfor --}} -->
 </div>
 @endsection
 

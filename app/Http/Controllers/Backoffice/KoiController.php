@@ -125,7 +125,8 @@ class KoiController extends Controller
      */
     public function edit(Koi $koi)
     {
-        $koi->load(['remarks', 'contests', 'sizes', 'videos', 'media', 'user']);
+        // $koi->load(['remarks', 'contests', 'sizes', 'videos', 'media', 'user']);
+        $koi->load(['remarks', 'contests', 'sizes', 'videos', 'media']);
 
         $categories = Category::active()->group('koi')->get()->toTree();
         $events = Event::active()->get();

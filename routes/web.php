@@ -138,6 +138,11 @@ Route::group(['namespace' => 'Frontend'], function() {
         'uses'  => 'EventController@Index'
     ]);
 
+    Route::get('event/{event}', [
+        'as'    => 'frontend.event.event',
+        'uses'  => 'EventController@getEvent'
+    ]);
+
     Route::get('event/{event}/koi/{koi}', [
         'as'    => 'frontend.event.koi',
         'uses'  => 'EventController@getKoi'
@@ -158,4 +163,3 @@ Route::group(['namespace' => 'Frontend'], function() {
         'uses'  => 'PartnerController@getDetail'
     ]);
 });
-

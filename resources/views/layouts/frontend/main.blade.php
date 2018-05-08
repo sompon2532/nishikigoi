@@ -12,8 +12,10 @@
     <!-- Slick -->
     <link rel="stylesheet" href="{{ asset('plugins/slick/slick.css') }}"/>
     <link rel="stylesheet" href="{{ asset('plugins/slick/slick-theme.css') }}"/>
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="{{ asset('plugins/lightbox/dist/css/lightbox.min.css') }}">
     <!-- Main style -->
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('frontend/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('frontend/style.css') }}" />
 
     @stack('style')
 
@@ -52,6 +54,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
     <!-- Slick -->
     <script src="{{ asset('plugins/slick/slick.min.js') }}"></script>
+    <!-- Lightbox -->
+    <script src="{{ asset('plugins/lightbox/dist/js/lightbox.js') }}"></script>    
     <!-- Calendar -->
     {!! $calendar->script() !!}
     <!-- Main script -->

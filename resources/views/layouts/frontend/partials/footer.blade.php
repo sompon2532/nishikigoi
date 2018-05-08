@@ -7,7 +7,7 @@
 <div class="col-sm-6 col-md-6">
     <div class="midle-box">
         <div class="text-center in-midle-box">
-            <h4>ABOUT US</h4>
+            <h3 class="text-red">ABOUT US</h3>
             <p>KOIKICHI FISH FARM</p>
             <P>WE ARE A MEMBER OF</P>
             <P>ALL JAPAN NISHIKIGOI PROMOTION ASSOCIATION</P>

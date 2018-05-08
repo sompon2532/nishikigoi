@@ -10,10 +10,6 @@ html,
 body {
     font-family: "thaisans_neueregular", "Helvetica Neue", Helvetica, Arial, sans-serif, Prompt;
     font-size: 1.1em;
-    /* font-size: 20px;
-    line-height: 1.42857143;
-    color: #333333;
-    background-color: #fff; */
 }
 
 .wrapper {
@@ -28,12 +24,6 @@ body {
     padding: 0 15px 15px 15px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 }
-
-
-/* .event-box,
-.partner-box {
-    width: 50%;
-} */
 
 .btn-event {
     float: right;
@@ -51,15 +41,10 @@ body {
     margin-left: 5px;
 }
 
-
-/* .content-wrapper {
-    margin-top: 10px;
-    margin-bottom: 10px;
-} */
-
 .content-box {
     margin-top: 10px;
     margin-bottom: 15px;
+    padding-bottom: 25px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,7 +85,6 @@ footer {
 }
 
 .fc-toolbar h2 {
-    /* font-size: 20px; */
     margin-top: 2px;
 }
 
@@ -241,15 +225,23 @@ span.stat {
     text-decoration: none;
 }
 
+.table-contact th {
+    background-color: #eee;
+    text-align: center;
+}
+
 .slider {
     width: 100%;
     margin: auto;
-    /* margin: 100px auto; */
 }
 
 .slider-nav,
 .slider-for {
     width: 90%;
+}
+
+.lazy {
+    width: 95%;
 }
 
 .slick-slide {
@@ -298,6 +290,10 @@ span.stat {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.text-link:hover {
+    text-decoration: none;
 }
 
 a p {

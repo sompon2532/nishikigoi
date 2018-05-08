@@ -17,6 +17,19 @@
             <P>16-22 SEPTEMBER 17</P>
         </div>
     </div>
+    @foreach($countries as $country)
+    <div class="col-sm-4 col-md-4">
+        <div class="card text-center">
+            <a href="{{ route('frontend.partner.detail', ['partner' => $country->id]) }}" class="text-link">
+                <img src="{{ asset($country->media->where('collection_name', 'country')->first()->getUrl()) }}" alt="...">
+                <div class="caption">
+                    <p>{{ $country->name }}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    @endforeach
+    <!-- {{--
     <div class="col-sm-4 col-md-4">
         <div class="card text-center">
             <a href="{{ url('partner/TH') }}">            
@@ -57,6 +70,7 @@
             </a>
         </div>
     </div>
+    --}} -->
 </div>
 @endsection
 

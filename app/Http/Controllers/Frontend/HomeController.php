@@ -5,12 +5,15 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Eventday;
-// use Calendar;
+use App\Models\News;
+
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
     public function Index ()
     {
+
         // $events = [];
         // // $data = Event::all();
         // // if($data->count()) {
@@ -50,6 +53,13 @@ class HomeController extends Controller
 
         $eventdays  = new Eventday();
         $calendar   = $eventdays->calendar;
-        return view('frontend.index', compact('calendar'));
+
+        $news = News::with(['media'])
+                    ->where('status', 1)
+                    ->whereDate('end_datetime', '>=' ,Carbon::now()->toDateString())
+                    ->orderBy('end_datetime', 'desc')
+                    ->get();
+
+        return view('frontend.index', compact('calendar', 'news'));
     }
 }

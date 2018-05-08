@@ -19,69 +19,68 @@
     </div>
 
     <div class="col-sm-6 col-md-6">
-        <!-- <div class="slide-show"> -->
+        @if(count($kois->media)>0)
             <div class="slider slider-for">
-                @for($i=1; $i<5; $i++)
+                @foreach($kois->media as $media)
                     <div>
-                        <a class="example-image-link" href="{{ asset('frontend/img/img-demo-koi.jpg') }}" data-lightbox="thumb-1">
-                            <img class="example-image" src="{{ asset('frontend/img/img-demo-koi.jpg') }}" alt="..." style="">
+                        <a class="example-image-link" href="{{ asset($media->getUrl()) }}" data-lightbox="thumb-1">
+                            <img class="example-image" src="{{ asset($media->getUrl()) }}" alt="..." style="">
                         </a>
                     </div>
-                @endfor
+                @endforeach
             </div>
-        <!-- </div> -->
-        <!-- <div class="slide-show"> -->
-            <div class="slider slider-nav">
-                @for($i=1; $i<5; $i++)
-                    <img src="{{ asset('frontend/img/img-demo-koi.jpg') }}" class="img-responsive" style="">    
-                @endfor
-            </div>
-        <!-- </div> -->
-        <div class="video-box">
-            <section class="lazy slider" data-sizes="50vw">
-                <div>
-                    <!-- Video -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" 
-                            src="https://player.vimeo.com/video/66079654?autoplay=0&loop=1&color=fc0328&title=0&portrait=0">
-                        </iframe>
-                        <!-- <div style="padding:56.25% 0 0 0;position:relative;">
-                                <iframe src="https://player.vimeo.com/video/66079654?autoplay=1&loop=1&color=fc0328&title=0&portrait=0" 
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                                </iframe>
-                            </div>
-                            <script src="https://player.vimeo.com/api/player.js"></script> -->
-                    </div>
+            @if(count($kois->media)>1)
+                <div class="slider slider-nav">
+                    @foreach($kois->media as $media)
+                        <img src="{{ asset($media->getUrl()) }}" class="img-responsive" style="">    
+                    @endforeach
                 </div>
-            </section>
-        </div>
+            @endif
+        @endif
+
+        @if(count($kois->videos)>0)
+            <div class="video-box">
+                <section class="lazy slider" data-sizes="50vw">
+                    @foreach($kois->videos as $video)
+                        <div>
+                            <h3 class="text-red text-center">VIDEO ({{ $video->date }})</h3>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                {!! $video->video !!}
+                            </div>
+                        </div>
+                    @endforeach
+                </section>
+            </div>
+        @endif
     </div>
     <div class="col-sm-6 col-md-6">
-        <p class="text-red">TO ORDER</p>
-        <p class="text-red">PLEASE CONTACT</p>
-        <table class="table table-striped">
+        <p class="text-red text-center">TO ORDER<br>PLEASE CONTACT</p>
+        <table class="table table-bordered table-contact text-center">
             <tr>
-                <td>CONTACT US</td>
+                <th class="text-red">CONTACT US</th>
             </tr>
-            <tr><td>TEL : XXXXXXXXXX</td></tr>
-            <tr><td>TEL : XXXXXXXXXX</td></tr>
-            <tr><td>TEL : XXXXXXXXXX</td></tr>
+            <tr><td>TEL : +66XXXXXXXXXX</td></tr>
+            <tr><td>TEL : +62XXXXXXXXXX</td></tr>
+            <tr><td>TEL : +65XXXXXXXXXX</td></tr>
         </table>
 
 
-        <p class="text-red">MARUYAMA SHOWA</p>
-        <p>CODE : 123456</p>
-        <p>OWNER : XXXXXX</p>
-        <p>PRICE : 999999 THB</p>
-        <p>SHIPPING : 999 THB</p>
+        <p class="text-red">{{ $kois->name }}</p>
+        <p>CODE : {{ $kois->koi_id }}</p>
+        <p>OWNER : </p>
+        <p>PRICE : {{ number_format($kois->price) }}</p>
+        <p>SHIPPING : </p>
 
 
         <p class="text-red">DETAIL</p>
-        <p>BREEDER: AOKIYA</p>
-        <p>BORN IN : 2017</p>
-        <p>SIZE : 36 CM.</p>
-        <p>GENDER : MALE</p>
+        <p>BREEDER: {{ $kois->farm->name }}</p>
+        <p>BORN IN : {{ $kois->born }}</p>
+        @if(count($kois->sizes)>0)
+            @foreach($kois->sizes as $size)
+                <p>SIZE : {{ $size->size }} ({{ $size->date }})</p>
+            @endforeach
+        @endif
+        <p>GENDER : {{ $kois->sex }}</p>
 
 
         <p class="text-red">DETAIL</p>
