@@ -166,14 +166,24 @@ span.stat {
 }
 
 .slide .glyphicon-menu-left,
-.slide .glyphicon-menu-right {
+.slide .glyphicon-menu-right,
+.slide .fa-angle-left,
+.slide .fa-angle-right {
     color: #f00;
-    font-size: 1.5em;
+    font-size: 3.5em;
     position: absolute;
     top: 50%;
     z-index: 5;
     display: inline-block;
     margin-top: -10px;
+}
+
+.carousel-indicators .active {
+    background-color: #f00;
+}
+
+.carousel-indicators li {
+    border-color: #f00;
 }
 
 .title {
@@ -292,7 +302,8 @@ span.stat {
     width: 50%;
 }
 
-.text-link:hover {
+.text-link:hover,
+.text-link:focus {
     text-decoration: none;
 }
 
