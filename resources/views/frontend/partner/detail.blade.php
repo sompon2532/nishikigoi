@@ -13,59 +13,43 @@
             <div class="title">
                 <h1>PARTNER</h1>
             </div>
-            <h3 class="text-red">JAPAN</h3>
+            <h3 class="text-red">{{$countries->name}}</h3>
         </div>
     </div>
 </div>
+@foreach($partners as $index => $partner)
 <div class="row">
     <div class="col-sm-4 col-md-4">
-        <img class="center-box" src="{{ asset('frontend/Icon/Thailand-S.png') }}" alt="">
+        @if(count($partner->media)>0)
+            <img class="center-box img-responsive img-thumbnail" src="{{ asset($partner->media()->where('collection_name', 'partner')->first()->getUrl()) }}" alt="{{$countries->name}}">
+        @else
+            <img class="center-box img-responsive img-thumbnail" src="{{ asset('frontend/img/default-partner.jpg') }}" alt="{{$countries->name}}"> 
+        @endif
     </div>
     <div class="col-sm-8 col-md-8">
         <p>
             <span class="partner-sj">KOISHI</span>
-            : Omosako koi farm
+            : {{$partner->koikichi}}
         </p> 
         <p>
             <span class="partner-sj">รายละเอียด</span>
-            : Owner : Mr.Takayoshi Omosako
+            : {{$partner->description}}
         </p> 
         <p>
             <span class="partner-sj">ที่อยู่</span>
-            : 178, Tochiharacho, kure-shi, Hiroshima 737-0922 Japan
+            : {{$partner->address}}
         </p>   
         <p>
             <span class="partner-sj">สายพันธุ์ที่ผลิต</span>
-            : Shiro-Utsuri, Kujaku, Showa, Goshiki
+            : {{$partner->strain}}
         </p>  
     </div>
 </div>
+    @if($index+1 < count($partners))
+        <hr class="red-line">
+    @endif
+@endforeach
     
-<hr class="red-line">
-
-<div class="row">
-    <div class="col-sm-4 col-md-4 clear-fix">
-        <img class="center-box" src="{{ asset('frontend/Icon/Thailand-S.png') }}" alt="">
-    </div>
-    <div class="col-sm-8 col-md-8 ">
-        <p>
-            <span class="partner-sj">KOISHI</span>
-            : Omosako koi farm
-        </p> 
-        <p>
-            <span class="partner-sj">รายละเอียด</span>
-            : Owner : Mr.Takayoshi Omosako
-        </p> 
-        <p>
-            <span class="partner-sj">ที่อยู่</span>
-            : 178, Tochiharacho, kure-shi, Hiroshima 737-0922 Japan
-        </p>   
-        <p>
-            <span class="partner-sj">สายพันธุ์ที่ผลิต</span>
-            : Shiro-Utsuri, Kujaku, Showa, Goshiki
-        </p>  
-    </div>
-</div>
 @endsection
 
 @push('script')

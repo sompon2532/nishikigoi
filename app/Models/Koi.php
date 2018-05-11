@@ -67,6 +67,14 @@ class Koi extends Model implements HasMedia
     ];
 
     /**
+     * @param $query
+     * @return mixed
+     */
+    public function scopeActive($query) {
+        return $query->where('status', 1);
+    }
+
+    /**
      * Get all of the post's remarks.
      */
     public function remarks()

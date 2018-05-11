@@ -20,9 +20,13 @@
         <div class="col-md-12">
             <div class="col-md-6">
                 <div class="card text-center">
-                    <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}">
-                        <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="...">
-                    </a>
+                    @if(count($event->media)>0)
+                        <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}">
+                            <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="{{ $event->name }}">
+                        </a>
+                    @else
+                        <img src="{{ asset('frontend/img/default-event.jpg') }}" alt="{{ $event->name }}">
+                    @endif
                 </div>
             </div>
             <div class="col-md-6">
@@ -42,7 +46,11 @@
         <div class="col-md-4">
             <div class="card text-center">
                 <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}" class="text-link">
-                    <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="...">
+                    @if(count($event->media)>0)
+                        <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="...">
+                    @else
+                        <img src="{{ asset('frontend/img/default-event.jpg') }}" alt="{{ $event->name }}">
+                    @endif
                     <div class="caption">
                         <h3 class="text-red">{{ $event->name }}</h3>
                     </div>
@@ -50,19 +58,6 @@
             </div>
         </div>
     @endforeach
-    
-    <!-- {{-- @for($i=1; $i<=10; $i++)
-    <div class="col-sm-4 col-md-3">
-        <div class="card text-center">
-            <img src="{{ asset('frontend/img/img-demo-koi.jpg') }}" alt="...">
-            <div class="caption">
-                <h3 class="text-red">Demo Koi</h3>
-                <p>BOOKING 5</p>
-                <p><a href="#" class="btn btn-white" role="button">DETAIL</a></p>
-            </div>
-        </div>
-    </div>
-    @endfor --}} -->
 </div>
 @endsection
 

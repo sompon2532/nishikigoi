@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Eventday;
 use App\Models\Countries;
+use App\Models\Partner;
 
 class PartnerController extends Controller
 {
@@ -14,17 +15,19 @@ class PartnerController extends Controller
         $eventdays  = new Eventday();
         $calendar   = $eventdays->calendar;
 
-        $countries = Countries::active()->get();
-
+        $countries  = Countries::active()->get();
 
         return view('frontend.partner.index', compact('calendar', 'countries'));
     }
 
-    public function getDetail()
+    public function getDetail($country)
     {
         $eventdays  = new Eventday();
         $calendar   = $eventdays->calendar;
 
-        return view('frontend.partner.detail', compact('calendar'));
+        $countries  = Countries::active()->find($country);
+        $partners   = Partner::with(['media'])->active()->where('country_id', $country)->get();
+
+        return view('frontend.partner.detail', compact('calendar', 'countries', 'partners'));
     }
 }

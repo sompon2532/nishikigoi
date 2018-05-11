@@ -32,8 +32,7 @@
             </div>
         @endif
     </div>
-<!-- </div>
-<div class="row"> -->
+
     <div class="col-md-12">
         <div class="title text-center">
             <h1>KOI</h1>
@@ -45,7 +44,11 @@
             <div class="col-sm-4 col-md-3">
                 <div class="card text-center">
                     <a href="{{ route('frontend.event.koi', ['event' => Request::segment(2), 'koi' => $koi->id])}}">
-                        <img src="{{ asset($koi->media->first()->getUrl()) }}" alt="...">
+                        @if(count($koi->media) > 0)
+                            <img src="{{ asset($koi->media->first()->getUrl()) }}" alt="{{ $koi->name }}">  
+                        @else
+                            <img src="{{ asset('frontend/img/default-koi.jpg') }}" alt="{{ $koi->name }}">                                                   
+                        @endif
                     </a>
                     <div class="caption">
                         <h4 class="text-red">{{ $koi->name }}</h4>

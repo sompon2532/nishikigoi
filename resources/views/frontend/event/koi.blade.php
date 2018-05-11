@@ -36,6 +36,8 @@
                     @endforeach
                 </div>
             @endif
+        @else
+            <img class="img-responsive center-box" src="{{ asset('frontend/img/default-koi.jpg') }}" alt="..." style="width:80%">
         @endif
 
         @if(count($kois->videos)>0)

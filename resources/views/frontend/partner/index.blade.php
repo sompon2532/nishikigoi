@@ -8,20 +8,22 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 title-partner-box">
         <div class="text-center">
             <div class="title">
                 <h1>PARTNER</h1>
             </div>
-            <p>CHUKOKU AUCTION WEEK</p>
-            <P>16-22 SEPTEMBER 17</P>
         </div>
     </div>
     @foreach($countries as $country)
     <div class="col-sm-4 col-md-4">
         <div class="card text-center">
-            <a href="{{ route('frontend.partner.detail', ['partner' => $country->id]) }}" class="text-link">
-                <img src="{{ asset($country->media->where('collection_name', 'country')->first()->getUrl()) }}" alt="...">
+            <a href="{{ route('frontend.partner.detail', ['country' => $country->id]) }}" class="text-link">
+                @if(count($country->media)>0)
+                    <img src="{{ asset($country->media->where('collection_name', 'country')->first()->getUrl()) }}" alt="...">
+                @else
+                    <img src="{{ asset('frontend/img/default-country.jpg') }}" alt="{{ $country->name }}">                                            
+                @endif
                 <div class="caption">
                     <p>{{ $country->name }}</p>
                 </div>
@@ -29,48 +31,6 @@
         </div>
     </div>
     @endforeach
-    <!-- {{--
-    <div class="col-sm-4 col-md-4">
-        <div class="card text-center">
-            <a href="{{ url('partner/TH') }}">            
-                <img src="{{ asset('frontend/Icon/Thailand-S.png') }}" alt="...">
-                <div class="caption">
-                    <p>THAILAND</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-4">
-        <div class="card text-center">
-            <a href="{{ url('partner/ID') }}">
-                <img class="" src="{{ asset('frontend/Icon/Indonesia-S.png') }}" alt="...">
-                <div class="caption">
-                    <p>INDONESIA</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-3">
-        <div class="card text-center">
-            <a href="{{ url('partner/SG') }}">
-                <img src="{{ asset('frontend/Icon/Singapore-S.png') }}" alt="...">
-                <div class="caption">
-                    <p>SINGAPORE</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="col-sm-4 col-md-3">
-        <div class="card text-center">
-            <a href="{{ url('partner/JP') }}">            
-                <img src="{{ asset('frontend/Icon/Japan-S.png') }}" alt="...">
-                <div class="caption">
-                    <p>JAPAN</p>
-                </div>
-            </a>
-        </div>
-    </div>
-    --}} -->
 </div>
 @endsection
 

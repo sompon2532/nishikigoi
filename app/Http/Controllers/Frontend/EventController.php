@@ -17,7 +17,7 @@ class EventController extends Controller
         $eventdays  = new Eventday();
         $calendar   = $eventdays->calendar;
 
-        $events = Event::with(['media'])->where('status', 1)->orderBy('end_datetime', 'desc')->get();
+        $events = Event::with(['media'])->active()->orderBy('end_datetime', 'desc')->get();
 
         $nowEvents = array();
         $passEvents = array();
@@ -49,8 +49,8 @@ class EventController extends Controller
         $calendar   = $eventdays->calendar;
 
         $events = Event::with(['media'])->find($event);
-        $kois = Koi::with(['media'])->where('status', 1)->where('event_id', $event)->get();
-
+        $kois = Koi::with(['media'])->active()->where('event_id', $event)->get();
+        
         return view('frontend.event.event', compact('calendar', 'events', 'kois'));
     }
 
@@ -59,7 +59,7 @@ class EventController extends Controller
         $eventdays  = new Eventday();
         $calendar   = $eventdays->calendar;
 
-        $kois = Koi::with(['media'])->where('id', $koi)->find($koi);
+        $kois = Koi::with(['media'])->active()->where('id', $koi)->find($koi);
 
         return view('frontend.event.koi', compact('calendar', 'kois'));
     }

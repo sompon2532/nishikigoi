@@ -186,6 +186,10 @@ span.stat {
     border-color: #f00;
 }
 
+.title-partner-box {
+    margin-bottom: 30px;
+}
+
 .title {
     min-height: 90px;
     padding-top: 2px;
@@ -299,7 +303,7 @@ span.stat {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .text-link:hover,
