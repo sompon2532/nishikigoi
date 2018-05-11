@@ -19,7 +19,7 @@ class CreateRegistersTable extends Migration
             $table->integer('event_id');
             $table->string('name', 255)->nullable();
             $table->string('phone', 16)->nullable();
-            $table->boolean('winner')->default(0);
+            $table->boolean('winner')->default(true);
             $table->timestamps();
         });
     }

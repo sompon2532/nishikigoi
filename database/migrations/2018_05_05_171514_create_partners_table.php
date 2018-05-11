@@ -15,7 +15,13 @@ class CreatePartnersTable extends Migration
     {
         Schema::create('partners', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('koikichi', 255)->nullable();
+            $table->text('description')->nullable();
+            $table->text('address')->nullable();
+            $table->text('strain')->nullable();
+            $table->boolean('status')->default(true);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

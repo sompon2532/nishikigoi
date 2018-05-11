@@ -9,7 +9,7 @@
     </h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li><a href="{{ route('country.index') }}"><i class="fa fa-dot-globe"></i> ประเทศ</a></li>
+        <li><a href="{{ route('country.index') }}"><i class="fa fa-globe"></i> ประเทศ</a></li>
         <li class="active">แก้ไข</li>
     </ol>
 @endsection

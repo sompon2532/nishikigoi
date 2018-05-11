@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Backoffice;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Models\Partner;
+use App\Models\Countries;
+
 class PartnerController extends Controller
 {
     /**
@@ -14,7 +17,9 @@ class PartnerController extends Controller
      */
     public function index()
     {
-        //
+        $partners = Partner::active()->get();
+
+        return view('backoffice.partner.index', compact('partners'));
     }
 
     /**
@@ -24,7 +29,9 @@ class PartnerController extends Controller
      */
     public function create()
     {
-        //
+        $countries = Countries::active()->get();
+
+        return view('backoffice.partner.create', compact('countries'));
     }
 
     /**
@@ -35,7 +42,18 @@ class PartnerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $partner = Partner::create($request->all());
+
+        // Image
+        if ($request->hasFile('image')) {
+            foreach ($request->file('image') as $image) {
+                $partner->addMedia($image)->toMediaCollection('partner');
+            }
+        }
+
+        return redirect()
+            ->route('partner.edit', ['partner' => $partner->id])
+            ->with(['success' => 'Create partner success']);
     }
 
     /**
@@ -55,9 +73,12 @@ class PartnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Partner $partner)
     {
-        //
+        $partner->load('media');
+        $countries = Countries::active()->get();
+
+        return view('backoffice.partner.update', compact('partner', 'countries'));
     }
 
     /**
@@ -67,9 +88,26 @@ class PartnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Partner $partner)
     {
-        //
+        $partner->update($request->all());
+
+        $remove_images = array_get($request->all(), 'remove_images', []);
+
+        $partner->getMedia('partner')->filter(function($image) use ($remove_images) {
+            return in_array($image->id, $remove_images);
+        })->map(function($image) { $image->delete(); });
+
+        // Image
+        if ($request->hasFile('image')) {
+            foreach ($request->file('image') as $image) {
+                $partner->addMedia($image)->toMediaCollection('partner');
+            }
+        }
+
+        return redirect()
+            ->route('partner.edit', ['partner' => $partner->id])
+            ->with(['success' => 'Update partner success']);
     }
 
     /**
@@ -78,8 +116,10 @@ class PartnerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Partner $partner)
     {
-        //
+        $partner->delete();
+
+        return;
     }
 }
