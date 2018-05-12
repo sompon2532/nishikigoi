@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Event;
 use App\Models\Koi;
 use App\User;
+use App\Models\Register;
 use Carbon\Carbon;
 
 class EventController extends Controller
@@ -191,21 +192,45 @@ class EventController extends Controller
     }
 
     /**
+     * @param Request $request
      * @param Event $event
      * @param Koi $koi
-     * @param $user
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function setWinner(Event $event, Koi $koi, User $user) {
-        $user_id = $user->id;
+    public function register(Request $request, Event $event, Koi $koi) {
+        $this->validate($request, [
+            'name' => 'required',
+            'phone' => 'required',
+        ]);
 
-        if ($koi->user_id == $user->id) {
-            $user_id = null;
+        $input = $request->all();
+        $input['event_id'] = $event->id;
+        $input['koi_id'] = $koi->id;
+
+        Register::create($input);
+
+        return redirect()->back();
+    }
+
+    /**
+     * @param Event $event
+     * @param Koi $koi
+     * @param Register $register
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function winner(Event $event, Koi $koi, Register $register) {
+        if ($register->winner) {
+            $register->update(['winner' => 0]);
+        }
+        else {
+            $register->update(['winner' => 1]);
         }
 
-        $koi->update([
-            'user_id' => $user_id
-        ]);
+        return redirect()->back();
+    }
+
+    public function delete(Event $event, Koi $koi, Register $register) {
+        $register->delete();
 
         return redirect()->back();
     }

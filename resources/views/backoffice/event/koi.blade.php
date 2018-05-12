@@ -25,20 +25,62 @@
             <div class="row">
                 <div class="col-xs-12" style="padding-bottom: 15px;">
                     <div class="col-sm-3">
-                        <h5>รหัสปลา: {{ $koi->koi_id }}</h5>
+                        <h4>รหัสปลา: {{ $koi->koi_id }}</h4>
                         <img src="{{ $koi->image }}" alt="" class="img-thumbnail">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="panel panel-default" style="margin-top: 40px">
+                            <div class="panel-heading">ฟอร์มเพิ่มรายชื่อผู้ลงทะเบียน</div>
+                            <div class="panel-body">
+                                <!-- form start -->
+                                <form class="form-horizontal" method="post" action="{{ route('event.koi.register', ['event' => $event->id, 'koi' => $koi->id]) }}">
+                                    {{ csrf_field() }}
+
+                                    <div class="box-body">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="name" class="col-sm-3 control-label">
+                                                    ชื่อ <span class="text-danger">*</span>
+                                                </label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" value="{{ old('name') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="phone" class="col-sm-3 control-label">
+                                                    เบอร์โทร
+                                                </label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" value="{{ old('phone') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-body -->
+                                    <div class="box-footer">
+                                        <div class="col-md-12">
+                                            <button type="submit" class="btn btn-primary pull-right">เพิ่มรายชื่อผู้ลงทะเบียน</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-footer -->
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-xs-12">
-                    <a class="btn btn-sm btn-primary pull-right" style="margin-bottom: 10px;">เพิ่มรายชื่อผู้ลงทะเบียน</a>
                     <table id="example2" class="table table-bordered table-hover">
                         <thead>
                         <tr>
                             <th>#</th>
                             <th>รายชื่อผู้ลงทะเบียน</th>
+                            <th>เบอร์ติดต่อ</th>
                             <th>สถานะ</th>
                             <th>การจัดการ</th>
                         </tr>
@@ -47,9 +89,10 @@
                         @foreach ($koi->register as $index => $register)
                             <tr>
                                 <td>{{ $index + 1 }}</td>
-                                <td>{{ $user->name }}</td>
+                                <td>{{ $register->name }}</td>
+                                <td>{{ $register->phone }}</td>
                                 <td>
-                                    @if ($register->winder)
+                                    @if ($register->winner)
                                         <span class="label label-success">
                                             <i class="fa fa-trophy"></i> ได้รับรางวัล
                                         </span>
@@ -58,13 +101,16 @@
                                     @endif
                                 </td>
                                 <td>
-                                    {{--@if ($koi->user_id == $user->id)--}}
-                                        {{--<a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'user' => $user->id]) }}" class="btn btn-xs btn-danger">--}}
-                                            {{--<i class="fa fa-ban"></i> ยกเลิก--}}
-                                        {{--</a>--}}
-                                    {{--@else--}}
-                                        {{--<a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'user' => $user->id]) }}" class="btn btn-xs btn-default">รับรางวัล</a>--}}
-                                    {{--@endif--}}
+                                    @if ($register->winner)
+                                        <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'register' => $register->id]) }}" class="btn btn-xs btn-danger">
+                                            <i class="fa fa-ban"></i> ยกเลิก
+                                        </a>
+                                    @else
+                                        <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'register' => $register->id]) }}" class="btn btn-xs btn-default">รับรางวัล</a>
+                                    @endif
+                                        <button data-token="{{ csrf_token() }}" data-id="{{ $register->id }}" data-url="1/delete" class="btn-delete btn btn-danger btn-xs">
+                                            <i class="fa fa-trash-o"></i>
+                                        </button>
                                 </td>
                             </tr>
                         @endforeach
@@ -73,6 +119,7 @@
                         <tr>
                             <th>#</th>
                             <th>รายชื่อผู้ลงทะเบียน</th>
+                            <th>เบอร์ติดต่อ</th>
                             <th>สถานะ</th>
                             <th>การจัดการ</th>
                         </tr>

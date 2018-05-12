@@ -25,9 +25,17 @@ Route::group(['prefix' => 'admin'], function() {
         Route::resource('category', 'CategoryController');
         Route::resource('news', 'NewsController');
 
-        Route::get('event/{event}/koi/{koi}/winner/{user}', [
+        Route::delete('event/{event}/koi/{koi}/delete/{register}', [
+            'as'   => 'event.koi.delete',
+            'uses' => 'EventController@delete'
+        ]);
+        Route::get('event/{event}/koi/{koi}/winner/{register}', [
             'as'   => 'event.koi.winner',
-            'uses' => 'EventController@setWinner'
+            'uses' => 'EventController@winner'
+        ]);
+        Route::post('event/{event}/koi/{koi}', [
+            'as'   => 'event.koi.register',
+            'uses' => 'EventController@register'
         ]);
         Route::get('event/{event}/koi/{koi}', [
             'as'   => 'event.koi.detail',
