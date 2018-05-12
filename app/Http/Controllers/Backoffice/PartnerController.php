@@ -17,7 +17,7 @@ class PartnerController extends Controller
      */
     public function index()
     {
-        $partners = Partner::active()->get();
+        $partners = Partner::get();
 
         return view('backoffice.partner.index', compact('partners'));
     }
