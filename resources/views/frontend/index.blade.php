@@ -25,7 +25,7 @@
                         @if(count($value->media)>0)
                             <img src="{{ asset($value->media->where('collection_name', 'news-cover')->first()->getUrl()) }}" alt="{{ $value->name }}" style="width:100%;">
                         @else
-                            <img src="{{ asset('frontend/img/default-news.jpg') }}" alt="{{ $value->name }}" style="width:100%;">                            
+                            <img src="{{ asset('frontend/img/default-news-cover.jpg') }}" alt="{{ $value->name }}" style="width:100%;">                            
                         @endif
                     </div>
                 @endforeach

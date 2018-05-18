@@ -13,8 +13,8 @@
             <div class="title">
                 <h1>EVENT</h1>
             </div>
-            <p>CHUKOKU AUCTION WEEK</p>
-            <P>16-22 SEPTEMBER 17</P>
+            <p>{{ $events->name }}</p>
+            <P>{{ $events->start_datetime->format('d/m/Y') }} TO {{ $events->end_datetime->format('d/m/Y') }}</P>
         </div>
     </div>
 
@@ -67,11 +67,12 @@
         </table>
 
 
-        <p class="text-red">{{ $kois->name }}</p>
+        <p class="text-red">{{ $kois->name }}{{ $kois->certificate == 1 ? ' [+CERTIFICATE]':''}}</p>
         <p>CODE : {{ $kois->koi_id }}</p>
-        <p>OWNER : </p>
+        
+        {{--<!-- <p>OWNER : </p> -->--}}
         <p>PRICE : {{ number_format($kois->price) }}</p>
-        <p>SHIPPING : </p>
+        {{--<!-- <p>SHIPPING : </p> -->--}}
 
 
         <p class="text-red">DETAIL</p>
@@ -84,13 +85,12 @@
         @endif
         <p>GENDER : {{ $kois->sex }}</p>
 
-
-        <p class="text-red">DETAIL</p>
+        {{--<!-- <p class="text-red">DETAIL</p>
         <p>xxxxxxxxxxxxxxxxxxxxxxxxx<br>
         xxxxxxxxxxxxxxxxxxxxxxxxx<br>
         xxxxxxxxxxxxxxxxxxxxxxxxx<br>
         xxxxxxxxxxxxxxxxxxxxxxxxx<br>
-        xxxxxxxxxxxxxxxxxxxxxxxxx<br></p>
+        xxxxxxxxxxxxxxxxxxxxxxxxx<br></p> -->--}}
     </div>
 </div>
 @endsection

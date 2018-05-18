@@ -13,24 +13,25 @@
             <div class="title">
                 <h1>EVENT</h1>
             </div>
-            <p>CHUKOKU AUCTION WEEK</p>
-            <P>16-22 SEPTEMBER 17</P>
+            <p>{{ $events->name }}</p>
+            <P>{{ $events->start_datetime->format('d/m/Y') }} TO {{ $events->end_datetime->format('d/m/Y') }}</P>
         </div>
     </div>
     <div class="col-md-offset-2 col-md-8">
-        <!-- Video -->
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" 
-                src="https://player.vimeo.com/video/66079654?autoplay=0&loop=1&color=fc0328&title=0&portrait=0">
-            </iframe>
-            <!-- <div style="padding:56.25% 0 0 0;position:relative;">
-                    <iframe src="https://player.vimeo.com/video/66079654?autoplay=1&loop=1&color=fc0328&title=0&portrait=0" 
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                        frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-                    </iframe>
-                </div>
-                <script src="https://player.vimeo.com/api/player.js"></script> -->
-        </div>
+        @if(count($events->videos)>0)
+            <div class="video-box">
+                <section class="lazy slider" data-sizes="50vw">
+                    @foreach($events->videos as $video)
+                        <div>
+                            <h3 class="text-red text-center">VIDEO ({{ $video->date }})</h3>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                {!! $video->video !!}
+                            </div>
+                        </div>
+                    @endforeach
+                </section>
+            </div>
+        @endif
     </div>
 <!-- </div>
 <div class="row"> -->
@@ -39,18 +40,41 @@
             <h1>WINNER</h1>
         </div>
     </div>
-    @for($i=1; $i<=10; $i++)
-    <div class="col-sm-4 col-md-3">
-        <div class="card text-center">
-            <img src="{{ asset('frontend/img/img-demo-koi.jpg') }}" alt="...">
-            <div class="caption text-red">
-                <p>WINNER</p>
-                <p>XXXXXX</p>
-                <p>DEMO KOI</p>
+    <div class="col-md-offset-2 col-md-8">
+        @if(count($kois) > 0)
+            @foreach($kois as $koi)
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="card text-center">
+                        @if(count($koi->media) > 0 )
+                            <img src="{{ asset($koi->media->where('collection_name', 'koi')->first()->getUrl()) }}" alt="...">
+                        @else
+                            <img src="{{ asset('frontend/img/default-koi.jpg') }}" alt="...">                        
+                        @endif
+                        <div class="caption text-red">
+                            <p>WINNER</p>
+                                @if(count($koi->register->where('winner', 1))>0)
+                                    @foreach($koi->register->where('winner', 1) as $winner)
+                                        <p>{{ $winner->name }}</p>
+                                    @endforeach
+                                @else
+                                    <p>-</p>
+                                @endif
+                            <p>DEMO KOI</p>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        @else
+            <div class="col-md-12">
+                <div class="text-center text-red">
+                    <h1>NO KOI.</h1>
+                </div>
             </div>
-        </div>
+        @endif
     </div>
-    @endfor
+    <div class="col-md-12 text-center">
+        {{ $kois->links() }}
+    </div>
 </div>
 @endsection
 

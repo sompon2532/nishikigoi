@@ -29,22 +29,19 @@ body {
     float: right;
 }
 
-.btn-partner {
-    float: left;
-}
-
 .btn-event {
     margin-right: 5px;
 }
 
 .btn-partner {
+    float: left;
     margin-left: 5px;
 }
 
 .content-box {
     margin-top: 10px;
     margin-bottom: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -170,9 +167,9 @@ span.stat {
 .slide .fa-angle-left,
 .slide .fa-angle-right {
     color: #f00;
-    font-size: 3.5em;
+    font-size: 2.5em;
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 5;
     display: inline-block;
     margin-top: -10px;
@@ -211,8 +208,12 @@ span.stat {
     margin-bottom: 15px;
 }
 
+.card p {
+    margin-bottom: 0;
+}
+
 .card img {
-    max-height: 150px;
+    width: 100%;
 }
 
 .text-red {
@@ -303,7 +304,6 @@ span.stat {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* width: 50%; */
 }
 
 .text-link:hover,
@@ -311,16 +311,53 @@ span.stat {
     text-decoration: none;
 }
 
+img.national-flag {
+    width: 60%;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
 a p {
     color: #000;
     text-decoration: none;
 }
 
+.pagination>li>a,
+.pagination>li>span {
+    color: #ff0000;
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
 @media (min-width: 768px) {
-    .equal,
-    .equal>div[class*='col-'] {
+    .equal {
+        display: -webkit-flex;
         display: flex;
+    }
+    .equal>div {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
+        display: -webkit-flex;
         flex-wrap: wrap;
     }
 }

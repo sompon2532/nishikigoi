@@ -15,21 +15,22 @@
             </div>
         </div>
     </div>
+
     @foreach($countries as $country)
-    <div class="col-sm-4 col-md-4">
-        <div class="card text-center">
-            <a href="{{ route('frontend.partner.detail', ['country' => $country->id]) }}" class="text-link">
-                @if(count($country->media)>0)
-                    <img src="{{ asset($country->media->where('collection_name', 'country')->first()->getUrl()) }}" alt="...">
-                @else
-                    <img src="{{ asset('frontend/img/default-country.jpg') }}" alt="{{ $country->name }}">                                            
-                @endif
-                <div class="caption">
-                    <p>{{ $country->name }}</p>
-                </div>
-            </a>
+        <div class="col-sm-4 col-md-4">
+            <div class="card text-center">
+                <a href="{{ route('frontend.partner.detail', ['country' => $country->id]) }}" class="text-link">
+                    @if(count($country->media)>0)
+                        <img src="{{ asset($country->media->where('collection_name', 'country')->first()->getUrl()) }}" alt="..." class="national-flag">
+                    @else
+                        <img src="{{ asset('frontend/img/default-country.jpg') }}" alt="{{ $country->name }}" class="national-flag">                                            
+                    @endif
+                    <div class="caption">
+                        <p>{{ $country->name }}</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
     @endforeach
 </div>
 @endsection

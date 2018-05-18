@@ -26,7 +26,7 @@ class PartnerController extends Controller
         $calendar   = $eventdays->calendar;
 
         $countries  = Countries::active()->find($country);
-        $partners   = Partner::with(['media'])->active()->where('country_id', $country)->get();
+        $partners   = Partner::with(['media'])->active()->where('country_id', $country)->paginate(10);
 
         return view('frontend.partner.detail', compact('calendar', 'countries', 'partners'));
     }

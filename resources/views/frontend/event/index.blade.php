@@ -25,13 +25,15 @@
                             <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="{{ $event->name }}">
                         </a>
                     @else
-                        <img src="{{ asset('frontend/img/default-event.jpg') }}" alt="{{ $event->name }}">
+                        <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}">
+                            <img src="{{ asset('frontend/img/default-event-cover.jpg') }}" alt="{{ $event->name }}">
+                        </a>
                     @endif
                 </div>
             </div>
             <div class="col-md-6">
-                <h1 class="text-red">New Event!</h1>
-                <p>{{ $event->name }}</p>
+                <h1 class="text-red text-center">New Event!</h1>
+                <p class="text-center">{{ $event->name }}</p>
             </div>
         </div>    
     @endforeach
@@ -49,7 +51,7 @@
                     @if(count($event->media)>0)
                         <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="...">
                     @else
-                        <img src="{{ asset('frontend/img/default-event.jpg') }}" alt="{{ $event->name }}">
+                        <img src="{{ asset('frontend/img/default-event-cover.jpg') }}" alt="{{ $event->name }}">
                     @endif
                     <div class="caption">
                         <h3 class="text-red">{{ $event->name }}</h3>
@@ -58,7 +60,13 @@
             </div>
         </div>
     @endforeach
+
+    <div class="col-md-12 text-center">
+        {{-- $passEvents->links() --}}
+    </div>
 </div>
+
+
 @endsection
 
 @push('script')
