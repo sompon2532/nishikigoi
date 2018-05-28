@@ -18,7 +18,7 @@ class HomeController extends Controller
 
         $news = News::with(['media'])
                     ->where('status', 1)
-                    ->whereDate('end_datetime', '>=' ,Carbon::now()->toDateString())
+                    ->whereDate('end_datetime', '>=' ,Carbon::now('Asia/Bangkok')->toDateTimeString())
                     ->orderBy('end_datetime', 'desc')
                     ->get();
 
