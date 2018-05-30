@@ -24,4 +24,12 @@ class HomeController extends Controller
 
         return view('frontend.index', compact('calendar', 'news'));
     }
+
+    public function getContact()
+    {
+        $eventdays  = new Eventday();
+        $calendar   = $eventdays->calendar;
+
+        return view('frontend.home.contact-us', compact('calendar'));
+    }
 }
