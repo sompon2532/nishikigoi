@@ -8,7 +8,7 @@
         <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> หน้าหลัก</a></li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
         <li><a href="{{ route('event.index') }}"><i class="fa fa-gamepad"></i> Event</a></li>
         <li class="active">Detail</li>
     </ol>
@@ -19,7 +19,7 @@
     <div class="col-md-12">
         <div class="box">
             <div class="box-header">
-                <h3 class="box-title">ข้อมูลผู้ลงทะเบียน</h3>
+                <h3 class="box-title">Member</h3>
             </div>
             <!-- /.box-header -->
             <div class="row">
@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-md-9">
                         <div class="panel panel-default" style="margin-top: 40px">
-                            <div class="panel-heading">ฟอร์มเพิ่มรายชื่อผู้ลงทะเบียน</div>
+                            <div class="panel-heading">Form menber register</div>
                             <div class="panel-body">
                                 <!-- form start -->
                                 <form class="form-horizontal" method="post" action="{{ route('event.koi.register', ['event' => $event->id, 'koi' => $koi->id]) }}">
@@ -51,7 +51,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="phone" class="col-sm-3 control-label">
-                                                    เบอร์โทร
+                                                    tel.
                                                 </label>
                                                 <div class="col-sm-9">
                                                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" value="{{ old('phone') }}">
@@ -62,7 +62,7 @@
                                     <!-- /.box-body -->
                                     <div class="box-footer">
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn btn-primary pull-right">เพิ่มรายชื่อผู้ลงทะเบียน</button>
+                                            <button type="submit" class="btn btn-primary pull-right">add member register</button>
                                         </div>
                                     </div>
                                     <!-- /.box-footer -->
@@ -79,8 +79,8 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>รายชื่อผู้ลงทะเบียน</th>
-                            <th>เบอร์ติดต่อ</th>
+                            <th>member</th>
+                            <th>tel.</th>
                             <th>Status</th>
                             <th>Management</th>
                         </tr>
@@ -103,7 +103,7 @@
                                 <td>
                                     @if ($register->winner)
                                         <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'register' => $register->id]) }}" class="btn btn-xs btn-danger">
-                                            <i class="fa fa-ban"></i> ยกเลิก
+                                            <i class="fa fa-ban"></i> Cancel
                                         </a>
                                     @else
                                         <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'register' => $register->id]) }}" class="btn btn-xs btn-default">award</a>
@@ -118,8 +118,8 @@
                         <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>รายชื่อผู้ลงทะเบียน</th>
-                            <th>เบอร์ติดต่อ</th>
+                            <th>member</th>
+                            <th>tel.</th>
                             <th>Status</th>
                             <th>Management</th>
                         </tr>

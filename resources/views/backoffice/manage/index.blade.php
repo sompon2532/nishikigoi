@@ -26,7 +26,7 @@
                     <tr>
                         <th>#</th>
                         <th>E-mail</th>
-                        <th>ชื่อ</th>
+                        <th>Name</th>
                         <th>Management</th>
                     </tr>
                     </thead>
@@ -50,7 +50,7 @@
                     <tr>
                         <th>#</th>
                         <th>E-mail</th>
-                        <th>ชื่อ</th>
+                        <th>Name</th>
                         <th>Management</th>
                     </tr>
                     </tfoot>

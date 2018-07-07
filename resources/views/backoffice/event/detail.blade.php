@@ -8,7 +8,7 @@
         <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> หน้าหลัก</a></li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
         <li><a href="{{ route('event.index') }}"><i class="fa fa-gamepad"></i> Event</a></li>
         <li class="active">Detail</li>
     </ol>
@@ -32,7 +32,7 @@
                                 <div>
                                     <a href="{{ route('event.koi.detail', ['event' => $event->id, 'koi' => $koi->id]) }}" class="btn btn-info btn-xs pull-right" style="margin-top: 5px;">
                                         <i class="fa fa-user" aria-hidden="true"></i>
-                                        ดูผู้ลงทะเบียน
+                                        View
                                     </a>
                                 </div>
                             </div>
