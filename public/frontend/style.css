@@ -354,6 +354,10 @@ a p {
     border-color: #ff0000;
 }
 
+.contactus-box {
+    margin: 15px auto;
+}
+
 @media (min-width: 768px) {
     .equal {
         display: -webkit-flex;

@@ -147,6 +147,11 @@ Route::group(['namespace' => 'Frontend'], function() {
         'uses'  => 'HomeController@Index'
     ]);
 
+    Route::get('contact-us', [
+        'as'    => 'frontend.home.contact-us',
+        'uses'  => 'HomeController@getContact'
+    ]);
+
     Route::get('event', [
         'as'    => 'frontend.event.index',
         'uses'  => 'EventController@Index'

@@ -18,10 +18,18 @@ class HomeController extends Controller
 
         $news = News::with(['media'])
                     ->where('status', 1)
-                    ->whereDate('end_datetime', '>=' ,Carbon::now()->toDateString())
+                    ->whereDate('end_datetime', '>=' ,Carbon::now('Asia/Bangkok')->toDateTimeString())
                     ->orderBy('end_datetime', 'desc')
                     ->get();
 
         return view('frontend.index', compact('calendar', 'news'));
+    }
+
+    public function getContact()
+    {
+        $eventdays  = new Eventday();
+        $calendar   = $eventdays->calendar;
+
+        return view('frontend.home.contact-us', compact('calendar'));
     }
 }

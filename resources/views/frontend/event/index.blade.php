@@ -15,7 +15,6 @@
             </div>
         </div>
     </div>
-
     @foreach($nowEvents as $event)
         <div class="col-md-12">
             <div class="col-md-6">
@@ -43,23 +42,24 @@
             <h1>PASS EVENT</h1>
         </div>
     </div>
-
-    @foreach($passEvents as $event)
-        <div class="col-md-4">
-            <div class="card text-center">
-                <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}" class="text-link">
-                    @if(count($event->media)>0)
-                        <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="...">
-                    @else
-                        <img src="{{ asset('frontend/img/default-event-cover.jpg') }}" alt="{{ $event->name }}">
-                    @endif
-                    <div class="caption">
-                        <h3 class="text-red">{{ $event->name }}</h3>
-                    </div>
-                </a>
+    <div class="col-md-12">
+        @foreach($passEvents as $event)
+            <div class="col-sm-6 col-md-4">
+                <div class="card text-center">
+                    <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}" class="text-link">
+                        @if(count($event->media)>0)
+                            <img src="{{ asset($event->media->where('collection_name', 'event-cover')->first()->getUrl()) }}" alt="..." class="img-responsive">
+                        @else
+                            <img src="{{ asset('frontend/img/default-event-cover.jpg') }}" alt="{{ $event->name }}" class="img-responsive">
+                        @endif
+                        <div class="caption">
+                            <h3 class="text-red">{{ $event->name }}</h3>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
-    @endforeach
+        @endforeach
+    </div>
 
     <div class="col-md-12 text-center">
         {{-- $passEvents->links() --}}
