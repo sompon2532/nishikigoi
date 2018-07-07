@@ -4,13 +4,13 @@
 
 @section('head')
     <h1>
-        อีเว้นท์
-        <small>รายละเอียด</small>
+        Event
+        <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าหลัก</a></li>
-        <li><a href="{{ route('event.index') }}"><i class="fa fa-gamepad"></i> อีเว้นท์</a></li>
-        <li class="active">รายละเอียด</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> หน้าหลัก</a></li>
+        <li><a href="{{ route('event.index') }}"><i class="fa fa-gamepad"></i> Event</a></li>
+        <li class="active">Detail</li>
     </ol>
 @endsection
 
@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-xs-12" style="padding-bottom: 15px;">
                     <div class="col-sm-3">
-                        <h4>รหัสปลา: {{ $koi->koi_id }}</h4>
+                        <h4>Fish Id: {{ $koi->koi_id }}</h4>
                         <img src="{{ $koi->image }}" alt="" class="img-thumbnail">
                     </div>
                     <div class="col-md-9">
@@ -40,7 +40,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="name" class="col-sm-3 control-label">
-                                                    ชื่อ <span class="text-danger">*</span>
+                                                    name <span class="text-danger">*</span>
                                                 </label>
                                                 <div class="col-sm-9">
                                                     <input type="text" class="form-control" name="name" id="name" placeholder="Name" value="{{ old('name') }}">
@@ -81,8 +81,8 @@
                             <th>#</th>
                             <th>รายชื่อผู้ลงทะเบียน</th>
                             <th>เบอร์ติดต่อ</th>
-                            <th>สถานะ</th>
-                            <th>การจัดการ</th>
+                            <th>Status</th>
+                            <th>Management</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -94,10 +94,10 @@
                                 <td>
                                     @if ($register->winner)
                                         <span class="label label-success">
-                                            <i class="fa fa-trophy"></i> ได้รับรางวัล
+                                            <i class="fa fa-trophy"></i> award
                                         </span>
                                     @else
-                                        <span class="label label-default">ไม่ได้รับรางวัล</span>
+                                        <span class="label label-default">not award</span>
                                     @endif
                                 </td>
                                 <td>
@@ -106,7 +106,7 @@
                                             <i class="fa fa-ban"></i> ยกเลิก
                                         </a>
                                     @else
-                                        <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'register' => $register->id]) }}" class="btn btn-xs btn-default">รับรางวัล</a>
+                                        <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'register' => $register->id]) }}" class="btn btn-xs btn-default">award</a>
                                     @endif
                                         <button data-token="{{ csrf_token() }}" data-id="{{ $register->id }}" data-url="1/delete" class="btn-delete btn btn-danger btn-xs">
                                             <i class="fa fa-trash-o"></i>
@@ -120,8 +120,8 @@
                             <th>#</th>
                             <th>รายชื่อผู้ลงทะเบียน</th>
                             <th>เบอร์ติดต่อ</th>
-                            <th>สถานะ</th>
-                            <th>การจัดการ</th>
+                            <th>Status</th>
+                            <th>Management</th>
                         </tr>
                         </tfoot>
                     </table>

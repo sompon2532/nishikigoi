@@ -4,12 +4,12 @@
 
 @section('head')
     <h1>
-        ที่เก็บปลา
-        <small>รายการ</small>
+        Store
+        <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li class="active">ที่เก็บปลา</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li class="active">Store</li>
     </ol>
 @endsection
 
@@ -17,7 +17,7 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <a href="{{ route('store.create') }}" class="pull-right btn btn-primary">สร้างที่เก็บปลา</a>
+                <a href="{{ route('store.create') }}" class="pull-right btn btn-primary">Create Store</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -25,9 +25,9 @@
                     <thead>
                     <tr>
                         <th>#</th>
-                        <th>ที่เก็บปลา</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Store</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -51,9 +51,9 @@
                     <tfoot>
                     <tr>
                         <th>#</th>
-                        <th>ที่เก็บปลา</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Store</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </tfoot>
                 </table>

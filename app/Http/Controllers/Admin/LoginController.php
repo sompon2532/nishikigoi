@@ -57,4 +57,12 @@ class LoginController extends Controller
     {
         return Auth::guard('admin');
     }
+
+    /**
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|void
+     */
+    public function logout() {
+        Auth::guard('admin')->logout();
+        return redirect('/admin');
+    }
 }

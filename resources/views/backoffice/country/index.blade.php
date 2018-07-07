@@ -4,12 +4,12 @@
 
 @section('head')
     <h1>
-        ประเทศ
-        <small>รายการ</small>
+        Country
+        <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li class="active">ประเทศ</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li class="active">Country</li>
     </ol>
 @endsection
 
@@ -17,7 +17,7 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <a href="{{ route('country.create') }}" class="pull-right btn btn-primary">สร้างประเทศ</a>
+                <a href="{{ route('country.create') }}" class="pull-right btn btn-primary">Create Country</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -25,9 +25,9 @@
                     <thead>
                     <tr>
                         <th>#</th>
-                        <th>ประเทศ</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Country</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -49,9 +49,9 @@
                     <tfoot>
                     <tr>
                         <th>#</th>
-                        <th>ประเทศ</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Country</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </tfoot>
                 </table>
