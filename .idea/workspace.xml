@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742f3363-f970-4ad7-ab40-830d232be831" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/event/detail.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/event/detail.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/event/koi.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/event/koi.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/manage/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/manage/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +16,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>หลุ่ม</find>
       <find>ชื่อฟาร์ม</find>
       <find>ชื่อสายพันธุ์</find>
       <find>ชื่อประเทศ</find>
@@ -50,6 +45,7 @@
       <find>ที่อยู่</find>
       <find>ชื่อ</find>
       <find>ิี</find>
+      <find>KOIKICHI-F</find>
     </findStrings>
     <replaceStrings>
       <replace>Data End</replace>
@@ -89,6 +85,7 @@
       <dir>$PROJECT_DIR$/resources/views/backoffice</dir>
       <dir>$PROJECT_DIR$/resources/views/admin</dir>
       <dir>$PROJECT_DIR$/resources/views</dir>
+      <dir>$PROJECT_DIR$/resources</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -259,12 +256,12 @@
       <workItem from="1527314555250" duration="240000" />
       <workItem from="1527314846582" duration="2762000" />
       <workItem from="1530944817102" duration="4645000" />
-      <workItem from="1530972153037" duration="403000" />
+      <workItem from="1530972153037" duration="604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43701000" />
+    <option name="totallyTimeSpent" value="43902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -463,6 +460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -521,6 +519,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -535,6 +534,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#946#977#0#HTML" expanded="true" />
+            <marker date="1530948288000" expanded="true" signature="486:539" ph="..." />
+            <marker date="1530948288000" expanded="true" signature="722:789" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -542,6 +546,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -586,6 +591,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="42" column="78" lean-forward="false" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+          <folding>
+            <marker date="1530949000000" expanded="true" signature="3128:3800" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="3195:3733" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="3276:3691" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="3361:3550" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="4172:4840" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="4239:4773" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="4320:4731" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="4401:4590" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -593,6 +608,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="61" column="28" lean-forward="false" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
+          <folding>
+            <marker date="1530949000000" expanded="true" signature="1091:2359" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="1158:2312" ph="..." />
+            <marker date="1530949000000" expanded="true" signature="1219:2290" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

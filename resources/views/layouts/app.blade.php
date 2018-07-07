@@ -30,7 +30,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    KOIKICHI-FISH-FARM
+                    Nishikigoi-Alliance
                 </a>
             </div>
 
