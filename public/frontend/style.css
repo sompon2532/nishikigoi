@@ -27,6 +27,12 @@ body {
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
 }
 
+.logo-box-btn {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+}
+
 .btn-event {
     float: right;
 }
