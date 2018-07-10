@@ -64,6 +64,11 @@ Route::group(['prefix' => 'admin'], function() {
             'uses' => 'LoginController@login'
         ]);
 
+        Route::get('logout', [
+            'as'   => 'admin.logout',
+            'uses' => 'LoginController@logout'
+        ]);
+
         Route::get('register', [
             'as'   => 'admin.register',
             'uses' => 'RegisterController@showRegistrationForm'
@@ -80,10 +85,11 @@ Route::group(['prefix' => 'admin'], function() {
 Route::group(['prefix' => 'admin'], function() {
     Route::middleware('auth:admin')->namespace('Backoffice')->group(function() {
         Route::get('/', [
-            'as'   => 'admin.index',
-            'uses' => 'AdminController@getIndex'
+            'as'   => 'dashboard.index',
+            'uses' => 'DashboardController@getIndex'
         ]);
 
+        Route::Resource('manage', 'ManageController');
         Route::resource('partner', 'PartnerController');
         Route::resource('country', 'CountryController');
         Route::resource('koi', 'KoiController');

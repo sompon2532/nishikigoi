@@ -4,12 +4,12 @@
 
 @section('head')
     <h1>
-        ปลา
-        <small>รายการ</small>
+        Fish
+        <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li class="active">ปลา</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li class="active">Fish</li>
     </ol>
 @endsection
 
@@ -17,17 +17,17 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <a href="{{ route('koi.create') }}" class="pull-right btn btn-primary">สร้างปลา</a>
+                <a href="{{ route('koi.create') }}" class="pull-right btn btn-primary">Create Fish</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
                 <table id="datatable" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>รหัสปลา</th>
-                        <th>ปลา</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Fish Id</th>
+                        <th>Fish</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -48,10 +48,10 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th>รหัสปลา</th>
-                        <th>ปลา</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Fish Id</th>
+                        <th>Fish</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </tfoot>
                 </table>

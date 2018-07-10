@@ -4,13 +4,13 @@
 
 @section('head')
     <h1>
-        ปลา ( {{ $store->name }} )
-        <small>รายการ</small>
+        Fish ( {{ $store->name }} )
+        <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li><a href="{{ route('store.index') }}"><i class="fa fa-stop"></i> ที่เก็บปลา</a></li>
-        <li class="active">ปลา ( {{ $store->name }} )</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="{{ route('store.index') }}"><i class="fa fa-stop"></i> Store</a></li>
+        <li class="active">Fish ( {{ $store->name }} )</li>
     </ol>
 @endsection
 
@@ -22,11 +22,11 @@
                 <table id="datatable" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>รหัสปลา</th>
-                        <th>ปลา</th>
-                        <th>เจ้าของปลา</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Fish Id</th>
+                        <th>Fish</th>
+                        <th>Owner</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -45,11 +45,11 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th>รหัสปลา</th>
-                        <th>ปลา</th>
-                        <th>เจ้าของปลา</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Fish Id</th>
+                        <th>Fish</th>
+                        <th>Owner</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </tfoot>
                 </table>

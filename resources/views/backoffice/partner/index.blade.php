@@ -5,10 +5,10 @@
 @section('head')
     <h1>
         Partner
-        <small>รายการ</small>
+        <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
         <li class="active">Partner</li>
     </ol>
 @endsection
@@ -17,7 +17,7 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <a href="{{ route('partner.create') }}" class="pull-right btn btn-primary">สร้าง Partner</a>
+                <a href="{{ route('partner.create') }}" class="pull-right btn btn-primary">Create  Partner</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -26,8 +26,8 @@
                     <tr>
                         <th>#</th>
                         <th>Partner</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -50,8 +50,8 @@
                     <tr>
                         <th>#</th>
                         <th>Partner</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </tfoot>
                 </table>

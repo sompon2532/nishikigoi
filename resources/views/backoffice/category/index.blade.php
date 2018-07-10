@@ -4,12 +4,12 @@
 
 @section('head')
     <h1>
-        หมวดหมู่
-        <small>รายการ</small>
+        Category
+        <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li class="active">หมวดหมู่</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li class="active">Category</li>
     </ol>
 @endsection
 
@@ -17,17 +17,17 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <a href="{{ route('category.create') }}" class="pull-right btn btn-primary">สร้างหมวดหมู่</a>
+                <a href="{{ route('category.create') }}" class="pull-right btn btn-primary">Create Category</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
                 <table id="example2" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                        <th>หมวดหมู่</th>
-                        <th>กลุ่ม</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Category</th>
+                        <th>Group</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -58,10 +58,10 @@
                     </tbody>
                     <tfoot>
                     <tr>
-                        <th>หมวดหมู่</th>
-                        <th>หลุ่ม</th>
-                        <th>สถานะ</th>
-                        <th>การจัดการ</th>
+                        <th>Category</th>
+                        <th>Group</th>
+                        <th>Status</th>
+                        <th>Management</th>
                     </tr>
                     </tfoot>
                 </table>

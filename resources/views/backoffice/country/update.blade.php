@@ -4,13 +4,13 @@
 
 @section('head')
     <h1>
-        ประเทศ
-        <small>แก้ไข</small>
+        Country
+        <small>Edit</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li><a href="{{ route('country.index') }}"><i class="fa fa-globe"></i> ประเทศ</a></li>
-        <li class="active">แก้ไข</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="{{ route('country.index') }}"><i class="fa fa-globe"></i> Country</a></li>
+        <li class="active">Edit</li>
     </ol>
 @endsection
 
@@ -20,7 +20,7 @@
         <!-- Horizontal Form -->
         <div class="box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">แก้ไขประเทศ</h3>
+                <h3 class="box-title">Edit Country</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -32,7 +32,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name" class="col-sm-3 control-label">
-                                ชื่อประเทศ <span class="text-danger">*</span>
+                                Name <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="name"
@@ -43,7 +43,7 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="status" class="col-sm-3 control-label">สถานะ</label>
+                            <label for="status" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="status" id="status">
                                     <option value="1" {{ $country->status == true ? 'selected' : '' }}>Active</option>
@@ -58,7 +58,7 @@
                 <!-- /.box-body -->
                 <div class="box-footer">
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary pull-right">แก้ไข</button>
+                        <button type="submit" class="btn btn-primary pull-right">Edit</button>
                     </div>
                 </div>
                 <!-- /.box-footer -->

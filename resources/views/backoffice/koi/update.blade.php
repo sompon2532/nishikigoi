@@ -4,13 +4,13 @@
 
 @section('head')
     <h1>
-        ปลา
-        <small>แก้ไข</small>
+        Fish
+        <small>Edit</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li><a href="{{ route('koi.index') }}"><i class="fa fa-archive"></i> ปลา</a></li>
-        <li class="active">แก้ไข</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="{{ route('koi.index') }}"><i class="fa fa-archive"></i> Fish</a></li>
+        <li class="active">Edit</li>
     </ol>
 @endsection
 
@@ -20,7 +20,7 @@
         <!-- Horizontal Form -->
         <div class="box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">แก้ไขปลา</h3>
+                <h3 class="box-title">Edit Fish</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -32,7 +32,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="nameEn" class="col-sm-3 control-label">
-                                ชื่อ <span class="text-danger">*</span>
+                                name <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="en[name]" value="{{ $koi->translate('en')->name }}" id="nameEn"
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="category" class="col-sm-3 control-label">หมวดหมู่ (ตู้โชว์)</label>
+                            <label for="category" class="col-sm-3 control-label">Category</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="category_id" id="category">
                                     <option value="">-------- Select category --------</option>
@@ -63,7 +63,7 @@
 
                         <div class="form-group">
                             <label for="koiId" class="col-sm-3 control-label">
-                                รหัสปลา <span class="text-danger">*</span>
+                                Fish Id <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="koi_id" value="{{ $koi->koi_id }}" id="koiId"
@@ -72,7 +72,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="strain" class="col-sm-3 control-label">สายพันธุ์</label>
+                            <label for="strain" class="col-sm-3 control-label">Breed</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="strain_id" id="strain">
                                     @foreach ($strains as $strain)
@@ -84,7 +84,7 @@
 
                         <div class="form-group">
                             <label for="born" class="col-sm-3 control-label">
-                                ปีเกิด <span class="text-danger">*</span>
+                                Bond <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="born" value="{{ $koi->born }}" id="born"
@@ -93,10 +93,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="store" class="col-sm-3 control-label">ที่เก็บปลา</label>
+                            <label for="store" class="col-sm-3 control-label">Store</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="store_id" id="store">
-                                    <option value="">-------- เลือกที่เก็บปลา --------</option>
+                                    <option value="">-------- Choose Store --------</option>
                                     @foreach ($stores as $store)
                                         <option value="{{ $store->id }}" {{ $store->id == $koi->store_id ? 'selected' : '' }}>{{ $store->name }}</option>
                                     @endforeach
@@ -105,7 +105,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="sex" class="col-sm-3 control-label">เพศ</label>
+                            <label for="sex" class="col-sm-3 control-label">Gender</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="sex" id="sex">
                                     <option value="male" {{ $koi->sex == 'male' ? 'selected' : '' }}>Male</option>
@@ -118,7 +118,7 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="event" class="col-sm-3 control-label">อีเว้นท์</label>
+                            <label for="event" class="col-sm-3 control-label">Event</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="event_id" id="event">
                                     <option value="">-------- Select event --------</option>
@@ -130,7 +130,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="farm" class="col-sm-3 control-label">ฟาร์ม</label>
+                            <label for="farm" class="col-sm-3 control-label">Farm</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="farm_id" id="farm">
                                     @foreach ($farms as $farm)
@@ -152,7 +152,7 @@
 
                         <div class="form-group">
                             <label for="price" class="col-sm-3 control-label">
-                                ราคา <span class="text-danger">*</span>
+                                Price <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="price" value="{{ $koi->price }}" id="price"
@@ -161,7 +161,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="status" class="col-sm-3 control-label">สถานะ</label>
+                            <label for="status" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="status" id="status">
                                     <option value="1">Active</option>
@@ -186,7 +186,7 @@
                     <div class="col-md-6">
                         <div class="form-group" v-for="(size, index) in sizes">
                             <label class="col-sm-3 control-label">
-                                ขนาด @{{ index + 1 }}
+                                Size @{{ index + 1 }}
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="sizes[]" v-model="size.size" placeholder="Size">
@@ -194,7 +194,7 @@
                             </div>
 
                             <label class="col-sm-3 control-label">
-                                วันที่
+                                Date
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control datepicker" name="date_sizes[]" v-model="size.date" placeholder="   Date" style="border-top: none; border-radius: 0">
@@ -207,7 +207,7 @@
                     <div class="col-md-6">
                         <div class="form-group" v-for="(contest, index) in contests">
                             <label class="col-sm-3 control-label">
-                                รางวัล @{{ index + 1 }}
+                                award @{{ index + 1 }}
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="contests[]" v-model="contest.contest" placeholder="Contest">
@@ -215,7 +215,7 @@
                             </div>
 
                             <label class="col-sm-3 control-label">
-                                วันที่
+                                Date
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control datepicker" name="date_contests[]" v-model="contest.date" placeholder="   Date" style="border-top: none; border-radius: 0">
@@ -230,7 +230,7 @@
                     <div class="col-md-6">
                         <div class="form-group" v-for="(video, index) in videos">
                             <label class="col-sm-3 control-label">
-                                วีดีโอ @{{ index + 1 }}
+                                Video @{{ index + 1 }}
                             </label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" name="videos[]" v-model="video.video" rows="5" placeholder="Video ..."></textarea>
@@ -238,7 +238,7 @@
                             </div>
 
                             <label class="col-sm-3 control-label">
-                                วันที่
+                                Date
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control datepicker" name="date_videos[]" v-model="video.date" placeholder="   Date" style="border-top: none; border-radius: 0">
@@ -251,7 +251,7 @@
                     <div class="col-md-6">
                         <div class="form-group" v-for="(remark, index) in remarks">
                             <label class="col-sm-3 control-label">
-                                หมายเหตุ @{{ index + 1 }}
+                                remark @{{ index + 1 }}
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="remarks[]" v-model="remark.remark" placeholder="Remark">
@@ -259,7 +259,7 @@
                             </div>
 
                             <label class="col-sm-3 control-label">
-                                วันที่
+                                Date
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control datepicker" name="date_remarks[]" v-model="remark.date" placeholder="   Date" style="border-top: none; border-radius: 0">

@@ -4,13 +4,13 @@
 
 @section('head')
     <h1>
-        ข่าวสาร
-        <small>แก้ไข</small>
+        News
+        <small>Edit</small>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
-        <li><a href="{{ route('news.index') }}"><i class="fa fa-newspaper-o"></i> ข่าวสาร</a></li>
-        <li class="active">แก้ไข</li>
+        <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="{{ route('news.index') }}"><i class="fa fa-newspaper-o"></i> News </a></li>
+        <li class="active">Edit</li>
     </ol>
 @endsection
 
@@ -20,7 +20,7 @@
         <!-- Horizontal Form -->
         <div class="box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">แก้ไขข่าวสาร</h3>
+                <h3 class="box-title">Edit News </h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
@@ -32,7 +32,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="nameEn" class="col-sm-3 control-label">
-                                ชื่อ <span class="text-danger">*</span>
+                                name <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="en[name]" value="{{ $news->translate('en')->name }}" id="nameEn"
@@ -42,7 +42,7 @@
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">
-                                วันที่เริ่ม <span class="text-danger">*</span>
+                                Date Start <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control datepicker" name="start_date" value="{{ $news->start_datetime->format('d/m/Y') }}">
@@ -51,7 +51,7 @@
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">
-                                วันที่สิ้นสุด <span class="text-danger">*</span>
+                                Date End <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control datepicker" name="end_date" value="{{ $news->end_datetime->format('d/m/Y') }}">
@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="status" class="col-sm-3 control-label">สถานะ</label>
+                            <label for="status" class="col-sm-3 control-label">Status</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="status" id="status">
                                     <option value="1" {{ $news->status == true ? 'selected' : '' }}>Active</option>
@@ -72,7 +72,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label class="col-sm-3 control-label">
-                                เวลาเริ่มต้น <span class="text-danger">*</span>
+                                Time Start <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <div class="bootstrap-timepicker">
@@ -83,7 +83,7 @@
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">
-                                เวลาสิ้นสุด <span class="text-danger">*</span>
+                                Time End <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <div class="bootstrap-timepicker">
@@ -99,7 +99,7 @@
                     <div class="col-md-6">
                         <div class="form-group" v-for="(video, index) in videos">
                             <label class="col-sm-3 control-label">
-                                วีดีโอ @{{ index + 1 }}
+                                Video @{{ index + 1 }}
                             </label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" name="videos[]" v-model="video.video" rows="5" placeholder="Video ..."></textarea>
@@ -121,7 +121,7 @@
                 <!-- /.box-body -->
                 <div class="box-footer">
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary pull-right">แก้ไข</button>
+                        <button type="submit" class="btn btn-primary pull-right">Edit</button>
                     </div>
                 </div>
                 <!-- /.box-footer -->
