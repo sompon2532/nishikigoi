@@ -60,10 +60,10 @@
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">
-                                Breed
+                                Variety
                             </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="strain" rows="5" placeholder="Breed">{{ $partner->strain }}</textarea>
+                                <textarea class="form-control" name="strain" rows="5" placeholder="Variety">{{ $partner->strain }}</textarea>
                             </div>
                         </div>
                     </div>

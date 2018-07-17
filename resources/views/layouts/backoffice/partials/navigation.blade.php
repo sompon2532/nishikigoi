@@ -45,7 +45,7 @@
 
     <li>
         <a href="{{ route('strain.index') }}">
-            <i class="fa fa-deviantart"></i> <span>Breed</span>
+            <i class="fa fa-deviantart"></i> <span>Variety</span>
         </a>
     </li>
 

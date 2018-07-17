@@ -72,7 +72,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="strain" class="col-sm-3 control-label">Breed</label>
+                            <label for="strain" class="col-sm-3 control-label">Variety</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="strain_id" id="strain">
                                     @foreach ($strains as $strain)
