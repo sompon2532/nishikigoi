@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742f3363-f970-4ad7-ab40-830d232be831" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Backoffice/KoiController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backoffice/KoiController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KoiController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KoiController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/KoiController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2602">
@@ -24,11 +24,43 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="260" column="36" lean-forward="true" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
+              <folding>
+                <element signature="e#13716#13737#0#HTML" expanded="true" />
+                <element signature="e#13863#13884#0#HTML" expanded="true" />
+                <element signature="e#14013#14055#0#HTML" expanded="true" />
+                <marker date="1532687510000" expanded="true" signature="2027:2560" ph="..." />
+                <marker date="1532687510000" expanded="true" signature="2094:2493" ph="..." />
+                <marker date="1532687510000" expanded="true" signature="2175:2451" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="263" column="71" lean-forward="false" selection-start-line="263" selection-start-column="71" selection-end-line="263" selection-end-column="71" />
+              <folding>
+                <element signature="e#14381#14402#0#HTML" expanded="true" />
+                <element signature="e#14528#14549#0#HTML" expanded="true" />
+                <marker date="1532687510000" expanded="true" signature="2101:2773" ph="..." />
+                <marker date="1532687510000" expanded="true" signature="2174:2706" ph="..." />
+                <marker date="1532687510000" expanded="true" signature="2255:2664" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ชื่อฟาร์ม</find>
       <find>ชื่อสายพันธุ์</find>
       <find>ชื่อประเทศ</find>
       <find>ฟาร์ม</find>
@@ -58,6 +90,7 @@
       <find>ชื่อ</find>
       <find>ิี</find>
       <find>KOIKICHI-F</find>
+      <find>style</find>
     </findStrings>
     <replaceStrings>
       <replace>Data End</replace>
@@ -143,7 +176,6 @@
         <option value="$PROJECT_DIR$/resources/views/backoffice/news/update.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/event/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/event/update.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/category/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/category/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/strain/create.blade.php" />
@@ -152,11 +184,12 @@
         <option value="$PROJECT_DIR$/resources/views/backoffice/store/detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/event/detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/event/koi.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/country/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/backoffice/partials/navigation.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/KoiController.php" />
+        <option value="$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php" />
       </list>
     </option>
   </component>
@@ -234,6 +267,32 @@
               <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Backoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="nishikigoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nishikigoi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nishikigoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nishikigoi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nishikigoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nishikigoi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="nishikigoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nishikigoi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backoffice" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="koi" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -296,12 +355,12 @@
       <workItem from="1530944817102" duration="4645000" />
       <workItem from="1530972153037" duration="710000" />
       <workItem from="1531802181406" duration="549000" />
-      <workItem from="1532686327509" duration="573000" />
+      <workItem from="1532686327509" duration="1077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45130000" />
+    <option name="totallyTimeSpent" value="45634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="6" />
@@ -602,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="43" column="81" lean-forward="false" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backoffice/category/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -665,13 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="105" column="76" lean-forward="false" selection-start-line="105" selection-start-column="76" selection-end-line="105" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backoffice/strain/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -698,6 +743,35 @@
         <state relative-caret-position="-2602">
           <caret line="91" column="68" lean-forward="false" selection-start-line="91" selection-start-column="68" selection-end-line="91" selection-end-column="68" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="260" column="36" lean-forward="true" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
+          <folding>
+            <element signature="e#13716#13737#0#HTML" expanded="true" />
+            <element signature="e#13863#13884#0#HTML" expanded="true" />
+            <element signature="e#14013#14055#0#HTML" expanded="true" />
+            <marker date="1532687510000" expanded="true" signature="2027:2560" ph="..." />
+            <marker date="1532687510000" expanded="true" signature="2094:2493" ph="..." />
+            <marker date="1532687510000" expanded="true" signature="2175:2451" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="263" column="71" lean-forward="false" selection-start-line="263" selection-start-column="71" selection-end-line="263" selection-end-column="71" />
+          <folding>
+            <element signature="e#14381#14402#0#HTML" expanded="true" />
+            <element signature="e#14528#14549#0#HTML" expanded="true" />
+            <marker date="1532687510000" expanded="true" signature="2101:2773" ph="..." />
+            <marker date="1532687510000" expanded="true" signature="2174:2706" ph="..." />
+            <marker date="1532687510000" expanded="true" signature="2255:2664" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

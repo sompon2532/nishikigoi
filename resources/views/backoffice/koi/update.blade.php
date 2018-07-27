@@ -258,10 +258,10 @@
                                 <i class="minus fa fa-minus-circle" v-on:click="remove('remark', index)" v-show="remarks.length > 1"></i>
                             </div>
 
-                            <label class="col-sm-3 control-label">
+                            <label class="col-sm-3 control-label" style="display: none">
                                 Date
                             </label>
-                            <div class="col-sm-9">
+                            <div class="col-sm-9" style="display: none">
                                 <input type="text" class="form-control datepicker" name="date_remarks[]" v-model="remark.date" placeholder="   Date" style="border-top: none; border-radius: 0">
                             </div>
                         </div>
