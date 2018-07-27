@@ -61,6 +61,7 @@ class Koi extends Model implements HasMedia
         'user_id',
         'storage',
         'price',
+        'unit',
         'category_id',
         'slug',
         'event_id'

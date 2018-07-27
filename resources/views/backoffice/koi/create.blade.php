@@ -154,7 +154,17 @@
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="price" value="{{ old('price') }}" id="price"
-                                       placeholder="Price">
+                                       placeholder="Unit">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="unit" class="col-sm-3 control-label">
+                                Unit <span class="text-danger">*</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="unit" value="{{ old('unit') }}" id="unit"
+                                       placeholder="Unit">
                             </div>
                         </div>
 
