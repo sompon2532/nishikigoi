@@ -69,7 +69,7 @@
 
     <li>
         <a href="{{ route('partner.index') }}">
-            <i class="fa fa-handshake-o"></i> <span>Partner</span>
+            <i class="fa fa-handshake-o"></i> <span>Alliance</span>
         </a>
     </li>
 
