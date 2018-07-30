@@ -37,4 +37,9 @@ class PartnerController extends Controller
 
         return view('frontend.alliance.index', compact('alliances'));
     }
+
+    public function getIndexPayment()
+    {
+        return view('frontend.payment.index');
+    }
 }

@@ -186,4 +186,9 @@ Route::group(['namespace' => 'Frontend'], function() {
         'as'    => 'frontend.alliance.index',
         'uses'  => 'PartnerController@getIndexAlliance'
     ]);
+
+    Route::get('payment', [
+        'as'    => 'frontend.payment.index',
+        'uses'  => 'PartnerController@getIndexPayment'
+    ]);
 });
