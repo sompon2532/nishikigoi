@@ -41,8 +41,10 @@
         <!-- </div> -->
         <footer>
             <div class="container">
-                <div class="row equal">
-                    @include('layouts.frontend.partials.footer')
+                <div class="row">
+                    <!-- <div class="row equal"> -->
+                        @include('layouts.frontend.partials.footer')
+                    <!-- </div> -->
                 </div>
             </div>
         </footer>
@@ -60,7 +62,7 @@
     <!-- Lightbox -->
     <script src="{{ asset('plugins/lightbox/dist/js/lightbox.js') }}"></script>    
     <!-- Calendar -->
-    {!! $calendar->script() !!}
+    {{--<!-- {!! $calendar->script() !!} -->--}}
     <!-- Main script -->
     <script src="{{ asset('frontend/script.js') }}"></script>
     @stack('scripts')

@@ -181,4 +181,9 @@ Route::group(['namespace' => 'Frontend'], function() {
         'as'    => 'frontend.partner.detail',
         'uses'  => 'PartnerController@getDetail'
     ]);
+
+    Route::get('alliance', [
+        'as'    => 'frontend.alliance.index',
+        'uses'  => 'PartnerController@getIndexAlliance'
+    ]);
 });

@@ -12,6 +12,10 @@ body {
     font-size: 1.1em;
 }
 
+p {
+    margin: 0px;
+}
+
 .wrapper {
     height: 100%;
     position: relative;
@@ -21,7 +25,8 @@ body {
 
 .logo-box {
     display: inline-block;
-    padding: 0 15px 15px 15px;
+    padding: 0;
+    /* padding: 0 15px 15px 15px; */
     /* border: 1px solid #eee; */
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
@@ -37,17 +42,18 @@ body {
     float: right;
 }
 
-.btn-event {
-    margin-right: 5px;
+.btn-partner {
+    /* position: absolute; */
+    display: inline-block;
+    margin: auto;
 }
 
-.btn-partner {
+.btn-payment {
     float: left;
-    margin-left: 5px;
 }
 
 .content-box {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -132,7 +138,7 @@ span.fc-time {
 }
 
 .midle-box {
-    padding: 15px;
+    padding: 10px;
     width: 100%;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
@@ -167,7 +173,7 @@ span.stat {
 }
 
 .red-line {
-    border-top: 1px solid #ff0000;
+    border-top: 2px solid #ff0000;
 }
 
 .carousel-control {

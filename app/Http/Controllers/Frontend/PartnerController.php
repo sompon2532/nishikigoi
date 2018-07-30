@@ -30,4 +30,11 @@ class PartnerController extends Controller
 
         return view('frontend.partner.detail', compact('calendar', 'countries', 'partners'));
     }
+
+    public function getIndexAlliance()
+    {
+        $alliances = Partner::with(['media'])->active()->paginate(10);
+
+        return view('frontend.alliance.index', compact('alliances'));
+    }
 }

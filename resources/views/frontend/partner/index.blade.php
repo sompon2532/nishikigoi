@@ -11,7 +11,7 @@
     <div class="col-md-12 title-partner-box">
         <div class="text-center">
             <div class="title">
-                <h1>PARTNER</h1>
+                <h1>ALLIANCE</h1>
             </div>
         </div>
     </div>
