@@ -9,7 +9,7 @@
 @section('content')
 <div class="row">
     <div class="col-md-12">
-        <div class="text-center">
+        <div class="text-center event-title">
             <div class="title">
                 <h1>EVENT</h1>
             </div>
@@ -55,42 +55,74 @@
             </div>
         @endif
     </div>
+
     <div class="col-sm-6 col-md-6">
-        <p class="text-red text-center">TO ORDER<br>PLEASE CONTACT</p>
-        <table class="table table-bordered table-contact text-center">
-            <tr>
-                <th class="text-red">CONTACT US</th>
-            </tr>
-            <tr><td>TEL : +66XXXXXXXXXX</td></tr>
-            <tr><td>TEL : +62XXXXXXXXXX</td></tr>
-            <tr><td>TEL : +65XXXXXXXXXX</td></tr>
-        </table>
-
-
         <p class="text-red">{{ $kois->name }}{{ $kois->certificate == 1 ? ' [+CERTIFICATE]':''}}</p>
-        <p>CODE : {{ $kois->koi_id }}</p>
         
-        {{--<!-- <p>OWNER : </p> -->--}}
-        <p>PRICE : {{ number_format($kois->price) }}</p>
-        {{--<!-- <p>SHIPPING : </p> -->--}}
+        <p>
+            <span class="koi-sj">CODE</span>
+            : {{ $kois->koi_id }}
+        </p>
 
+        <p>
+            <span class="koi-sj">PRICE</span>
+            : {{ number_format($kois->price) }} {{$kois->unit}}
+        </p>
 
         <p class="text-red">DETAIL</p>
-        <p>BREEDER: {{ $kois->farm->name }}</p>
-        <p>BORN IN : {{ $kois->born }}</p>
+
+        @if($kois->farm)
+            <p> 
+                <span class="koi-sj">BREEDER</span> 
+                : {{ $kois->farm->name }}
+            </p>
+        @endif
+
+        <p>
+            <span class="koi-sj">BORN IN</span>
+            : {{ $kois->born }}
+        </p>
+
+        @if($kois->category)
+            <p>
+                <span class="koi-sj">CATEGORY</span>
+                : {{ $kois->category->name }}
+            </p>
+        @endif
+
+        @if($kois->strain)
+            <p>
+                <span class="koi-sj">VARIETY</span>
+                : {{ $kois->strain->name }}
+            </p>
+        @endif
+
+        @if($kois->store)
+            <p>
+                <span class="koi-sj">STORE</span>
+                : {{ $kois->store->name }}
+            </p>
+        @endif
+
         @if(count($kois->sizes)>0)
             @foreach($kois->sizes as $size)
-                <p>SIZE : {{ $size->size }} ({{ $size->date }})</p>
+                <p>
+                    <span class="koi-sj">SIZE</span>
+                    : {{ $size->size }} ({{ $size->date }})
+                </p>
             @endforeach
         @endif
-        <p>GENDER : {{ $kois->sex }}</p>
 
-        {{--<!-- <p class="text-red">DETAIL</p>
-        <p>xxxxxxxxxxxxxxxxxxxxxxxxx<br>
-        xxxxxxxxxxxxxxxxxxxxxxxxx<br>
-        xxxxxxxxxxxxxxxxxxxxxxxxx<br>
-        xxxxxxxxxxxxxxxxxxxxxxxxx<br>
-        xxxxxxxxxxxxxxxxxxxxxxxxx<br></p> -->--}}
+        <p>
+            <span class="koi-sj">GENDER</span>
+            : {{ $kois->sex }}
+        </p>
+
+        @if(count($kois->remarks)>0)
+            @foreach($kois->remarks as $remark)
+                <p>REMARK : {{ $remark->remark }}</p>
+            @endforeach
+        @endif
     </div>
 </div>
 @endsection

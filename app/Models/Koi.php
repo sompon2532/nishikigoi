@@ -140,4 +140,8 @@ class Koi extends Model implements HasMedia
         return $this->hasMany(Register::class);
     }
 
+    public function category() {
+        return $this->belongsTo(Category::class);
+    }
+
 }

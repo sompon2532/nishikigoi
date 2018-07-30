@@ -259,9 +259,18 @@ span.stat {
     text-decoration: none;
 }
 
-.table-contact th {
+.event-title {
+    margin-bottom: 30px;
+}
+
+/* .table-contact th {
     background-color: #eee;
     text-align: center;
+} */
+.koi-sj{
+    display: block;
+    width: 75px;
+    float: left;
 }
 
 .slider {
