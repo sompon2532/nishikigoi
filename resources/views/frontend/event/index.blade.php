@@ -37,7 +37,8 @@
         </div>    
     @endforeach
 
-    <div class="col-md-12">
+{{--
+    <!-- <div class="col-md-12">
         <div class="title text-center">
             <h1>PASS EVENT</h1>
         </div>
@@ -59,7 +60,8 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> -->
+--}}
 
     <div class="col-md-12 text-center">
         {{-- $passEvents->links() --}}
