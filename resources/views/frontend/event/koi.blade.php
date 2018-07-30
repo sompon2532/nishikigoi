@@ -97,6 +97,13 @@
             </p>
         @endif
 
+        @if($kois->strain)
+            <p>
+                <span class="koi-sj">OYAGOI</span>
+                : {{ $kois->oyagoi }}
+            </p>
+        @endif
+
         @if($kois->store)
             <p>
                 <span class="koi-sj">STORE</span>
@@ -104,7 +111,7 @@
             </p>
         @endif
 
-        @if(count($kois->sizes)>0)
+        @if($kois->sizes)
             @foreach($kois->sizes as $size)
                 <p>
                     <span class="koi-sj">SIZE</span>
@@ -118,9 +125,21 @@
             : {{ $kois->sex }}
         </p>
 
+        @if(count($kois->contests)>0)
+            @foreach($kois->contests as $contest)
+                <p>
+                    <span class="koi-sj">AWARD</span>
+                    : {{ $contest->contest }} ({{ $contest->date }})
+                </p>
+            @endforeach
+        @endif
+
         @if(count($kois->remarks)>0)
             @foreach($kois->remarks as $remark)
-                <p>REMARK : {{ $remark->remark }}</p>
+                <p>
+                    <span class="koi-sj">REMARK</span>
+                    : {{ $remark->remark }}
+                </p>
             @endforeach
         @endif
     </div>
