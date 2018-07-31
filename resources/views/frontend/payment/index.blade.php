@@ -17,6 +17,66 @@
         </div>
 
         <div class="col-sm-offset-1 col-md-offset-1 col-sm-3 col-md-3">
+            <img src="{{asset('frontend/img/MAXKOIFARM.jpg')}}" alt="..." class="img-responsive payment-lg">
+        </div>
+        <div class="col-sm-7 col-md-7">
+            <p>
+                <span class="partner-sj">BANK</span>
+                : United Overseas Bank Limited Thomson Road Branch.
+            </p> 
+            <p>
+                <span class="partner-sj">ACCOUNT NAME</span>
+                :  Ng Chuen Guan
+            </p>
+            <p>
+                <span class="partner-sj">ADDRESS</span>
+                : 136 Yuk Tong Ave Singapore 596434
+            </p> 
+            <p>
+                <span class="partner-sj">ACCOUNT NO.</span>
+                : 314-900-212-8
+            </p>   
+            <p>
+                <span class="partner-sj">SWIFT CODE</span>
+                : UOVBSGSG
+            </p>  
+        </div>
+
+        <div class="col-md-offset-1 col-md-10">    
+            <hr class="red-line">
+        </div>
+
+        <div class="col-sm-offset-1 col-md-offset-1 col-sm-3 col-md-3">
+            <img src="{{asset('frontend/img/SAMURAI.jpg')}}" alt="..." class="img-responsive payment-lg">
+        </div>
+        <div class="col-sm-7 col-md-7">
+            <p>
+                <span class="partner-sj">BANK</span>
+                : 
+            </p> 
+            <p>
+                <span class="partner-sj">ACCOUNT NAME</span>
+                :  
+            </p>
+            <p>
+                <span class="partner-sj">ADDRESS</span>
+                : 
+            </p> 
+            <p>
+                <span class="partner-sj">ACCOUNT NO.</span>
+                : 
+            </p>   
+            <p>
+                <span class="partner-sj">SWIFT CODE</span>
+                : 
+            </p>  
+        </div>
+
+        <div class="col-md-offset-1 col-md-10">    
+            <hr class="red-line">
+        </div>
+
+        <div class="col-sm-offset-1 col-md-offset-1 col-sm-3 col-md-3">
             <img src="{{asset('frontend/img/KOIKICHIFISHFARM.jpg')}}" alt="..." class="img-responsive payment-lg">
         </div>
         <div class="col-sm-7 col-md-7">
@@ -42,35 +102,9 @@
             </p>  
         </div>
 
-        <div class="col-md-offset-1 col-md-10">    
-            <hr class="red-line">
-        </div>
+        
 
-        <div class="col-sm-offset-1 col-md-offset-1 col-sm-3 col-md-3">
-            <img src="{{asset('frontend/img/MAXKOIFARM.jpg')}}" alt="..." class="img-responsive payment-lg">
-        </div>
-        <div class="col-sm-7 col-md-7">
-            <p>
-                <span class="partner-sj">BANK</span>
-                : United Overseas Bank Limited Thomson Road Branch.
-            </p> 
-            <p>
-                <span class="partner-sj">ACCOUNT NAME</span>
-                :  Ng Chuen Guan
-            </p>
-            <p>
-                <span class="partner-sj">ADDRESS</span>
-                : 136 Yuk Tong Ave Singapore 596434
-            </p> 
-            <p>
-                <span class="partner-sj">ACCOUNT NO.</span>
-                : 314-900-212-8
-            </p>   
-            <p>
-                <span class="partner-sj">SWIFT CODE</span>
-                : UOVBSGSG
-            </p>  
-        </div>
+        
     </div>
 @endsection
 

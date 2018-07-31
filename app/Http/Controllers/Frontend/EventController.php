@@ -85,7 +85,6 @@ class EventController extends Controller
         // dd($kois->first()->register);
 
         if($nowDateTime[0] > $endDateTime[0]) {
-
             return view('frontend.event.winner', compact('calendar', 'events', 'kois')); //Pass
         } elseif ($nowDateTime[0] < $endDateTime[0]) {
             return view('frontend.event.event', compact('calendar', 'events', 'kois')); //Now

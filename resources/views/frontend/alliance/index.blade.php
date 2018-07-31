@@ -19,9 +19,9 @@
         @foreach($alliances as $index => $alliance)
             <div class="col-sm-offset-1 col-md-offset-1 col-sm-3 col-md-3">
                 @if(count($alliance->media)>0)
-                    <img src="{{ asset($alliance->media->where('collection_name', 'partner')->first()->getUrl()) }}" alt="{{ $alliance->koikichi }}" class="national-flag">
+                    <img src="{{ asset($alliance->media->where('collection_name', 'partner')->first()->getUrl()) }}" alt="{{ $alliance->koikichi }}" class="national-flag img-responsive">
                 @else
-                    <img src="{{ asset('frontend/img/default-country.jpg') }}" alt="{{ $alliance->koikichi }}" class="national-flag">                                            
+                    <img src="{{ asset('frontend/img/default-country.jpg') }}" alt="{{ $alliance->koikichi }}" class="national-flag img-responsive">                                            
                 @endif
             </div>
             <div class="col-sm-7 col-md-7">
@@ -44,7 +44,7 @@
             </div>
 
             @if($index+1 < count($alliances))
-                <div class="col-md-offset-1 col-md-10">    
+                <div class="col-xs-10 col-xs-offset-1">    
                     <hr class="red-line">
                 </div>
             @endif

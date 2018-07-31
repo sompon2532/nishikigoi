@@ -17,7 +17,7 @@
     </div>
     @foreach($nowEvents as $event)
         <div class="col-md-12">
-            <div class="col-md-6">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="card text-center">
                     @if(count($event->media)>0)
                         <a href="{{ route('frontend.event.event', ['event'=>$event->id]) }}">
@@ -30,10 +30,12 @@
                     @endif
                 </div>
             </div>
-            <div class="col-md-6">
+            {{--
+            <!-- <div class="col-md-6">
                 <h1 class="text-red text-center">New Event!</h1>
                 <p class="text-center">{{ $event->name }}</p>
-            </div>
+            </div> -->
+            --}}
         </div>    
     @endforeach
 
