@@ -32,20 +32,11 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name" class="col-sm-3 control-label">
-                                Koikichi <span class="text-danger">*</span>
+                                Farm <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="koikichi"
-                                       value="{{ $partner->koikichi }}" id="koikichi" placeholder="Koikichi">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label">
-                                Detail
-                            </label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control" name="description" rows="5" placeholder="Detail">{{ $partner->description }}</textarea>
+                                       value="{{ $partner->koikichi }}" id="koikichi" placeholder="Farm">
                             </div>
                         </div>
 
@@ -54,16 +45,25 @@
                                 Address
                             </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="address" rows="5" placeholder="Address">{{ $partner->address }}</textarea>
+                                <textarea class="form-control" name="description" rows="5" placeholder="Address">{{ $partner->description }}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">
-                                Variety
+                                Website / Mail
                             </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="strain" rows="5" placeholder="Variety">{{ $partner->strain }}</textarea>
+                                <textarea class="form-control" name="address" rows="5" placeholder="Website / Mail">{{ $partner->address }}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">
+                                Tel
+                            </label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="strain" rows="5" placeholder="Tel">{{ $partner->strain }}</textarea>
                             </div>
                         </div>
                     </div>

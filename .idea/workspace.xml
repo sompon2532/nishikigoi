@@ -4,7 +4,6 @@
     <list default="true" id="742f3363-f970-4ad7-ab40-830d232be831" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/partner/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/partner/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backoffice/partner/update.blade.php" afterPath="$PROJECT_DIR$/resources/views/backoffice/partner/update.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,21 +15,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PartnerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/PartnerController.php">
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1523">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="823">
+              <caret line="36" column="119" lean-forward="false" selection-start-line="36" selection-start-column="115" selection-end-line="36" selection-end-column="119" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Partner.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Partner.php">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/backoffice/partner/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="851">
+              <caret line="37" column="72" lean-forward="false" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="92" column="32" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -39,18 +48,28 @@
       <file leaf-file-name="update.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/backoffice/partner/update.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="37" column="86" lean-forward="false" selection-start-line="37" selection-start-column="86" selection-end-line="37" selection-end-column="86" />
+            <state relative-caret-position="263">
+              <caret line="26" column="81" lean-forward="false" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php">
+      <file leaf-file-name="navigation.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/backoffice/partials/navigation.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="226">
+              <caret line="70" column="34" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartnerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/PartnerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -60,9 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ฟาร์ม</find>
-      <find>สายพันธุ์ที่ผลิต</find>
-      <find>สายพันธุ์ที่ผลิด</find>
       <find>สายพันธุ์</find>
       <find>เลือกที่เก็บปลา</find>
       <find>ที่เก็บปลา</find>
@@ -90,11 +106,11 @@
       <find>style</find>
       <find>Price</find>
       <find>Partner</find>
+      <find>partner.</find>
+      <find>backoffice.alliance.</find>
+      <find>alliance.partner.</find>
     </findStrings>
     <replaceStrings>
-      <replace>Data End</replace>
-      <replace>Video</replace>
-      <replace>Time Start</replace>
       <replace>Time End</replace>
       <replace>Date Start</replace>
       <replace>Date End</replace>
@@ -122,6 +138,9 @@
       <replace>Detail</replace>
       <replace>Address</replace>
       <replace />
+      <replace>alliance.</replace>
+      <replace>alliance.partner.</replace>
+      <replace>backoffice.partner.</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -130,6 +149,8 @@
       <dir>$PROJECT_DIR$/resources/views</dir>
       <dir>$PROJECT_DIR$/resources</dir>
       <dir>$PROJECT_DIR$/resources/views/backoffice</dir>
+      <dir>$PROJECT_DIR$/resources/views/backoffice/partner</dir>
+      <dir>$PROJECT_DIR$/app/Http/Controllers/Backoffice</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -142,7 +163,6 @@
         <option value="$PROJECT_DIR$/app/Models/Countries.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/CountryController.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/koi/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backoffice/partner/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_05_05_171514_create_partners_table.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/country/update.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_05_10_155130_add_field_country_id_to_partners_table.php" />
@@ -153,12 +173,10 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_05_04_092937_create_registers_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Register.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/EventController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/PartnerController.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2017_08_05_084428_create_kois_table.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/backoffice/partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/ManageController.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/manage/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" />
@@ -179,15 +197,18 @@
         <option value="$PROJECT_DIR$/resources/views/backoffice/event/detail.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/event/koi.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/country/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/KoiController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_07_27_104721_add_unit_to_kois_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Koi.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/koi/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/koi/update.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/backoffice/partials/navigation.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/DashboardController.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/dashboard.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/backoffice/partials/navigation.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/PartnerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/backoffice/partner/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/partner/update.blade.php" />
       </list>
     </option>
@@ -366,12 +387,12 @@
       <workItem from="1530972153037" duration="710000" />
       <workItem from="1531802181406" duration="549000" />
       <workItem from="1532686327509" duration="3615000" />
-      <workItem from="1533482972212" duration="1185000" />
+      <workItem from="1533482972212" duration="2672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49357000" />
+    <option name="totallyTimeSpent" value="50844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -410,13 +431,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/asset/js/auction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/asset/admin/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-409">
@@ -536,13 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="91" column="54" lean-forward="false" selection-start-line="91" selection-start-column="54" selection-end-line="91" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -701,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/backoffice/partials/navigation.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="71" column="60" lean-forward="false" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/KoiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2602">
@@ -756,14 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/PartnerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1523">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Partner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -772,18 +764,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="92" column="32" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/backoffice/partials/navigation.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="70" column="34" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/PartnerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backoffice/partner/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="37" column="72" lean-forward="false" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="51" column="32" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="823">
+          <caret line="36" column="119" lean-forward="false" selection-start-line="36" selection-start-column="115" selection-end-line="36" selection-end-column="119" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backoffice/partner/update.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="37" column="86" lean-forward="false" selection-start-line="37" selection-start-column="86" selection-end-line="37" selection-end-column="86" />
+        <state relative-caret-position="263">
+          <caret line="26" column="81" lean-forward="false" selection-start-line="26" selection-start-column="81" selection-end-line="26" selection-end-column="81" />
           <folding />
         </state>
       </provider>

@@ -31,19 +31,10 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name" class="col-sm-3 control-label">
-                                Koikichi <span class="text-danger">*</span>
+                                Farm <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="koikichi" id="koikichi" placeholder="Koikichi">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-sm-3 control-label">
-                                Detail
-                            </label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control" name="description" rows="5" placeholder="Detail"></textarea>
+                                <input type="text" class="form-control" name="koikichi" id="koikichi" placeholder="Farm">
                             </div>
                         </div>
 
@@ -52,16 +43,25 @@
                                 Address
                             </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="address" rows="5" placeholder="Address"></textarea>
+                                <textarea class="form-control" name="description" rows="5" placeholder="Address"></textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">
-                                Breed
+                                Website / Mail
                             </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="strain" rows="5" placeholder="Breed"></textarea>
+                                <textarea class="form-control" name="address" rows="5" placeholder="Website / Mail"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">
+                                Tel
+                            </label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="strain" rows="5" placeholder="Tel"></textarea>
                             </div>
                         </div>
                     </div>
