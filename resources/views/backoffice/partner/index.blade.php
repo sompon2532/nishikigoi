@@ -1,15 +1,15 @@
 @extends('layouts.backoffice.main')
 
-@section('title', 'Admin | Partner')
+@section('title', 'Admin | Alliance')
 
 @section('head')
     <h1>
-        Partner
+        Alliance
         <small>Detail</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li class="active">Partner</li>
+        <li class="active">Alliance</li>
     </ol>
 @endsection
 
@@ -17,7 +17,7 @@
     <div class="col-xs-12">
         <div class="box">
             <div class="box-header">
-                <a href="{{ route('partner.create') }}" class="pull-right btn btn-primary">Create  Partner</a>
+                <a href="{{ route('partner.create') }}" class="pull-right btn btn-primary">Create  Alliance</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -25,7 +25,7 @@
                     <thead>
                     <tr>
                         <th>#</th>
-                        <th>Partner</th>
+                        <th>Alliance</th>
                         <th>Status</th>
                         <th>Management</th>
                     </tr>
@@ -49,7 +49,7 @@
                     <tfoot>
                     <tr>
                         <th>#</th>
-                        <th>Partner</th>
+                        <th>Alliance</th>
                         <th>Status</th>
                         <th>Management</th>
                     </tr>

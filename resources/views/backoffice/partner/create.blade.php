@@ -1,15 +1,15 @@
 @extends('layouts.backoffice.main')
 
-@section('title', 'Admin | Partner')
+@section('title', 'Admin | Alliance')
 
 @section('head')
     <h1>
-        Partner
+        Alliance
         <small>Create</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('dashboard.index') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="{{ route('partner.index') }}"><i class="fa fa-handshake-o"></i> Partner</a></li>
+        <li><a href="{{ route('partner.index') }}"><i class="fa fa-handshake-o"></i> Alliance</a></li>
         <li class="active">Create</li>
     </ol>
 @endsection
@@ -20,7 +20,7 @@
         <!-- Horizontal Form -->
         <div class="box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">Create  Partner</h3>
+                <h3 class="box-title">Create  Alliance</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
