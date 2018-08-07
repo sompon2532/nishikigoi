@@ -26,19 +26,19 @@
             </div>
             <div class="col-sm-7 col-md-7">
                 <p>
-                    <span class="partner-sj">KOISHI</span>
+                    <span class="partner-sj">FARM</span>
                     : {{$alliance->koikichi}}
                 </p> 
                 <p>
-                    <span class="partner-sj">รายละเอียด</span>
+                    <span class="partner-sj">ADDRESS</span>
                     : {{$alliance->description}}
                 </p> 
                 <p>
-                    <span class="partner-sj">ที่อยู่</span>
+                    <span class="partner-sj">WEBSITE / E-MAIL</span>
                     : {{$alliance->address}}
                 </p>   
                 <p>
-                    <span class="partner-sj">สายพันธุ์ที่ผลิต</span>
+                    <span class="partner-sj">TEL</span>
                     : {{$alliance->strain}}
                 </p>  
             </div>
