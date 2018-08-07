@@ -2,13 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="742f3363-f970-4ad7-ab40-830d232be831" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/cors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/asm89/stack-cors/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/asm89/stack-cors/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/asm89/stack-cors/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/asm89/stack-cors/src/Asm89/Stack/Cors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/asm89/stack-cors/src/Asm89/Stack/CorsService.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/changelog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/config/cors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/phpunit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/phpunit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/src/HandleCors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/src/HandlePreflight.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/src/LumenServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/src/ServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/tests/CorsKernel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/tests/GlobalMiddlewareTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/tests/GroupMiddlewareTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/tests/PreflightTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/barryvdh/laravel-cors/tests/TestCase.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
@@ -42,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DemoController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DemoController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Demo/DemoController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
@@ -50,6 +74,46 @@
               <folding>
                 <element signature="e#45#73#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="183" column="45" lean-forward="false" selection-start-line="183" selection-start-column="45" selection-end-line="183" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cors.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/cors.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="874">
+              <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/CountryController.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/koi/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_05_05_171514_create_partners_table.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/country/update.blade.php" />
@@ -184,11 +247,12 @@
         <option value="$PROJECT_DIR$/resources/views/backoffice/partner/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/partner/update.blade.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Demo/DemoController.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -340,12 +404,12 @@
       <workItem from="1531802181406" duration="549000" />
       <workItem from="1532686327509" duration="3615000" />
       <workItem from="1533482972212" duration="2864000" />
-      <workItem from="1533660326758" duration="1214000" />
+      <workItem from="1533660326758" duration="1976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52250000" />
+    <option name="totallyTimeSpent" value="53012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -384,20 +448,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/CountryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="116" column="8" lean-forward="false" selection-start-line="116" selection-start-column="8" selection-end-line="118" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/StrainController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -704,14 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -724,14 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="182" column="58" lean-forward="false" selection-start-line="182" selection-start-column="58" selection-end-line="182" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -751,6 +785,38 @@
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="183" column="45" lean-forward="false" selection-start-line="183" selection-start-column="45" selection-end-line="183" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
