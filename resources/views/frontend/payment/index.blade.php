@@ -52,23 +52,23 @@
         <div class="col-sm-7 col-md-7">
             <p>
                 <span class="partner-sj">BANK</span>
-                : 
+                : BCA
             </p> 
             <p>
                 <span class="partner-sj">ACCOUNT NAME</span>
-                :  
+                :  M.Kiki Sutarki Nuralim Ir
             </p>
             <p>
                 <span class="partner-sj">ADDRESS</span>
-                : 
+                : Jalan. IR.Haji Juanda No.118. Bandung Indonesia
             </p> 
             <p>
                 <span class="partner-sj">ACCOUNT NO.</span>
-                : 
+                : 777-3388-999
             </p>   
             <p>
                 <span class="partner-sj">SWIFT CODE</span>
-                : 
+                : CENAIDJA
             </p>  
         </div>
 

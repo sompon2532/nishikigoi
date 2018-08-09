@@ -106,7 +106,7 @@
 
         @if($kois->store)
             <p>
-                <span class="koi-sj">STORE</span>
+                <span class="koi-sj">KEEPING AT</span>
                 : {{ $kois->store->name }}
             </p>
         @endif
@@ -127,19 +127,23 @@
 
         @if(count($kois->contests)>0)
             @foreach($kois->contests as $contest)
-                <p>
-                    <span class="koi-sj">AWARD</span>
-                    : {{ $contest->contest }} ({{ $contest->date }})
-                </p>
+                @if($contest->contest != "")
+                    <p>
+                        <span class="koi-sj">AWARD</span>
+                        : {{ $contest->contest }} ({{ $contest->date }})
+                    </p>
+                @endif
             @endforeach
         @endif
 
         @if(count($kois->remarks)>0)
             @foreach($kois->remarks as $remark)
-                <p>
-                    <span class="koi-sj">REMARK</span>
-                    : {{ $remark->remark }}
-                </p>
+                @if($contest->remark != "")
+                    <p>
+                        <span class="koi-sj">REMARK</span>
+                        : {{ $remark->remark }}
+                    </p>
+                @endif
             @endforeach
         @endif
     </div>

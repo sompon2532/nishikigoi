@@ -4,8 +4,13 @@
             <img class="img-responsive" src="{{ asset('frontend/img/AW-NISHIKIGOI_ALLIANCE-BANNER.jpg') }}" alt="">
         </a>
         <div class="logo-box-btn">
-            <div class="col-xs-2 col-xs-offset-3">
-                <a href="{{ route('frontend.event.index') }}" class="btn-event" title="Event">
+            <div class="col-xs-2 col-xs-offset-2">
+                <a href="{{ route('frontend.news.index') }}" class="btn-event" title="Event">
+                    <img class="img-responsive" src="{{ Request::segment(1) == 'news' ? asset('frontend/Icon/newspaper-red.png') :asset('frontend/Icon/newspaper-gray.png') }}" alt="" width="60px">
+                </a>
+            </div>
+            <div class="col-xs-2 text-center">
+                <a href="{{ route('frontend.event.index') }}" class="btn-partner" title="Event">
                     <img class="img-responsive" src="{{ Request::segment(1) == 'event' ? asset('frontend/Icon/Event-Red.png') :asset('frontend/Icon/Event-Gray.png') }}" alt="" width="60px">
                 </a>
             </div>

@@ -29,6 +29,14 @@ class News extends Model implements HasMedia
     protected $dates = ['start_datetime', 'end_datetime', 'deleted_at'];
 
     /**
+     * @param $query
+     * @return mixed
+     */
+    public function scopeActive($query) {
+        return $query->where('status', 1);
+    }
+
+    /**
      * @var string
      */
     public $translationModel = NewsTranslation::class;

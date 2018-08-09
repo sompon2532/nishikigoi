@@ -152,6 +152,16 @@ Route::group(['namespace' => 'Frontend'], function() {
         'uses'  => 'HomeController@getContact'
     ]);
 
+    Route::get('news', [
+        'as'    => 'frontend.news.index',
+        'uses'  => 'NewsController@Index'
+    ]);
+
+    Route::get('news/{news}', [
+        'as'    => 'frontend.news.news',
+        'uses'  => 'NewsController@getNews'
+    ]);
+
     Route::get('event', [
         'as'    => 'frontend.event.index',
         'uses'  => 'EventController@Index'
