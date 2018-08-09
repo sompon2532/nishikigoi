@@ -36,17 +36,9 @@ p {
     bottom: 15px;
 }
 
-.btn-event {
-    float: right;
-}
-
-.btn-partner {
+.btn-center {
     display: inline-block;
     margin: auto;
-}
-
-.btn-payment {
-    float: left;
 }
 
 .content-box {
@@ -206,6 +198,7 @@ span.stat {
     color: #f00;
 }
 
+
 /* .title {
     min-height: 90px;
     padding-top: 2px;
@@ -214,6 +207,7 @@ span.stat {
     background-repeat: no-repeat;
     background-position: center top;
 } */
+
 
 /* .title h1 {
     color: #fff;
@@ -263,11 +257,13 @@ span.stat {
     margin-bottom: 30px;
 }
 
+
 /* .table-contact th {
     background-color: #eee;
     text-align: center;
 } */
-.koi-sj{
+
+.koi-sj {
     display: block;
     width: 75px;
     float: left;
@@ -395,7 +391,6 @@ a p {
     .logo-box-btn {
         bottom: 0px;
     }
-
     .logo-box-btn img {
         margin: auto;
     }

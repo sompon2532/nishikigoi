@@ -30,7 +30,7 @@
             </p>
             <p>
                 <span class="partner-sj">ADDRESS</span>
-                : 136 Yuk Tong Ave Singapore 596434
+                : United Overseas Bank Limited Thomson Road Branch
             </p> 
             <p>
                 <span class="partner-sj">ACCOUNT NO.</span>
