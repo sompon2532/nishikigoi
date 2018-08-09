@@ -202,3 +202,5 @@ Route::group(['namespace' => 'Frontend'], function() {
         'uses'  => 'PartnerController@getIndexPayment'
     ]);
 });
+
+Route::get('demo', 'Demo\DemoController@index');

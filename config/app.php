@@ -180,6 +180,8 @@ return [
 
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
     ],
 
     /*
