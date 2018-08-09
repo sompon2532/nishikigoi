@@ -30,7 +30,7 @@
             </p>
             <p>
                 <span class="partner-sj">ADDRESS</span>
-                : United Overseas Bank Limited Thomson Road Branch
+                : 251-253 Upper Thomson Branch Singapore 574376
             </p> 
             <p>
                 <span class="partner-sj">ACCOUNT NO.</span>
