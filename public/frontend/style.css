@@ -44,10 +44,14 @@ p {
 .content-box {
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 20px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.home-slide {
+    margin-top: 20px;
 }
 
 footer {
@@ -140,6 +144,10 @@ span.fc-time {
     height: 100%;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.stat-box {
+    margin-top: 20px;
 }
 
 span.stat {

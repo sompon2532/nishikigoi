@@ -7,17 +7,36 @@
 {{--<!-- <div class="col-sm-12 col-md-12"> -->--}}
     <div class="midle-box">
         <div class="text-center in-midle-box">
-            <h3 class="text-red">ABOUT US</h3>
-            <p>KOIKICHI FISH FARM</p>
-            <P>WE ARE A MEMBER OF</P>
-            <P>ALL JAPAN NISHIKIGOI PROMOTION ASSOCIATION</P>
-    
-            <span class="stat">
-                <img src="{{ asset('frontend/Icon/Stat.png')}}" alt="" width="20px"> 
-                {{--<!-- <a href="https://smallseotools.com/visitor-hit-counter/" target="_blank" title="Web Counter"> -->--}}
-                    <img src="https://smallseotools.com/counterDisplay?code=5ae73e4c97220751c82c87dfb696a04e&style=0013&pad=5&type=page&initCount=1000"  title="Web Counter" Alt="Web Counter" border="0">
-                {{--<!-- </a> -->--}}
-            </span>
+            <div class="row">
+                <h3 class="text-red">ABOUT US</h3>
+                {{--<!-- <p>KOIKICHI FISH FARM</p>
+                <P>WE ARE A MEMBER OF</P>
+                <P>ALL JAPAN NISHIKIGOI PROMOTION ASSOCIATION</P> -->--}}
+                <p>We share the same believe that keeping koi should bring more fun and friends.</p>
+                <p>So, we created the Nishikigoi Alliance where koi lovers around the world could get together</p>
+                <p>and share the enjoyment of keeping koi.</p>
+                <br>
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="col-md-4 text-right">
+                        <img src="{{ asset('frontend/img/MAXKOIFARM.jpg')}}" alt="max-koi-farm" width="72px" >
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="{{ asset('frontend/img/SAMURAI.jpg')}}" alt="samurai-koi-centre" class="btn-center" width="72px">
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <img src="{{ asset('frontend/img/KOIKICHIFISHFARM.jpg')}}" alt="koikichi-fish-farm" width="72px">
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 stat-box">
+                    <span class="stat">
+                        <img src="{{ asset('frontend/Icon/Stat.png')}}" alt="" width="20px"> 
+                        {{--<!-- <a href="https://smallseotools.com/visitor-hit-counter/" target="_blank" title="Web Counter"> -->--}}
+                        <img src="https://smallseotools.com/counterDisplay?code=5ae73e4c97220751c82c87dfb696a04e&style=0013&pad=5&type=page&initCount=1000"  title="Web Counter" Alt="Web Counter" border="0">
+                        {{--<!-- </a> -->--}}
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 {{--<!-- </div> -->--}}
