@@ -10,15 +10,17 @@
 <div class="row">
     <div class="col-md-12">
         <div class="text-center">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="card text-center">
-                    @if(count($events->media->where('collection_name', 'event')) > 0)
-                        <img src="{{ asset($events->media->where('collection_name', 'event')->first()->getUrl()) }}" alt="{{ $events->name }}">
-                        {{--<!-- @else
-                            <img src="{{ asset('frontend/img/default-event-cover.jpg') }}" alt="{{ $events->name }}"> -->--}}
-                    @endif
-                </div>
-            </div>
+            @if(count($events->media->where('collection_name', 'event')) > 0)
+                @foreach($events->media->where('collection_name', 'event') as $media)
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="card text-center">
+                            <img src="{{ asset($media->getUrl()) }}" alt="{{ $events->name }}">
+                            {{--<!-- @else
+                                <img src="{{ asset('frontend/img/default-event-cover.jpg') }}" alt="{{ $events->name }}"> -->--}}
+                        </div>
+                    </div>
+                @endforeach
+            @endif
             {{--
             <!-- <div class="title">
                 <h1>EVENT</h1>

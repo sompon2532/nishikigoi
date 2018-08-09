@@ -9,7 +9,7 @@
 @section('content')
 <div class="row">
     @if(count($news) > 0)
-        <div class="col-md-12 home-slide">
+        <div class="col-md-12">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -52,7 +52,7 @@
 
     <!-- <br> -->
     @if(count($nowEvents) > 0)
-        <div class="col-md-12 home-slide" style="margin-top:20px;">
+        <div class="col-md-12 {{ count($news) > 0 ? 'home-slide' : '' }}">
             <div id="myCarousel2" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
