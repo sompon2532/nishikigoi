@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="742f3363-f970-4ad7-ab40-830d232be831" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/frontend/style.css" afterPath="$PROJECT_DIR$/public/frontend/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/footer.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/frontend/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1097">
-              <caret line="430" column="1" lean-forward="true" selection-start-line="430" selection-start-column="1" selection-end-line="430" selection-end-column="1" />
+            <state relative-caret-position="273">
+              <caret line="392" column="21" lean-forward="false" selection-start-line="392" selection-start-column="21" selection-end-line="392" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -298,12 +297,12 @@
       <workItem from="1533660326758" duration="3694000" />
       <workItem from="1533700626706" duration="740000" />
       <workItem from="1533875932267" duration="334000" />
-      <workItem from="1533961157476" duration="2793000" />
+      <workItem from="1533961157476" duration="3165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58597000" />
+    <option name="totallyTimeSpent" value="58969000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="714" extended-state="6" />
@@ -701,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/frontend/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1097">
-          <caret line="430" column="1" lean-forward="true" selection-start-line="430" selection-start-column="1" selection-end-line="430" selection-end-column="1" />
+        <state relative-caret-position="273">
+          <caret line="392" column="21" lean-forward="false" selection-start-line="392" selection-start-column="21" selection-end-line="392" selection-end-column="21" />
           <folding />
         </state>
       </provider>
