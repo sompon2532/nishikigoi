@@ -417,3 +417,11 @@ a p {
         flex-wrap: wrap;
     }
 }
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .text-about > p {
+        text-align: left;
+        margin: 0 15px 0 25px;
+    }
+}

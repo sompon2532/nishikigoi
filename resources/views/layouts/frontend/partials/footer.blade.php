@@ -12,22 +12,27 @@
                 {{--<!-- <p>KOIKICHI FISH FARM</p>
                 <P>WE ARE A MEMBER OF</P>
                 <P>ALL JAPAN NISHIKIGOI PROMOTION ASSOCIATION</P> -->--}}
-                <p>We share the same believe that keeping koi should bring more fun and friends.</p>
-                <p>So, we created the Nishikigoi Alliance where koi lovers around the world could get together</p>
-                <p>and share the enjoyment of keeping koi.</p>
-                <br>
-                <div class="col-md-4 col-md-offset-4">
-                    <div class="col-md-4 text-right">
+
+                <div class="text-about">
+                    <p>We share the same believe that keeping koi should bring more fun and friends.</p>
+                    <p>So, we created the Nishikigoi Alliance where koi lovers around the world could get together</p>
+                    <p>and share the enjoyment of keeping koi.</p>
+                </div>
+
+                <br />
+
+                <div class="col-xs-10 col-sm-6 col-md-4 col-xs-offset-1 col-sm-offset-3 col-md-offset-4">
+                    <div class="col-xs-4">
                         <img src="{{ asset('frontend/img/MAXKOIFARM.jpg')}}" alt="max-koi-farm" width="72px" >
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-xs-4">
                         <img src="{{ asset('frontend/img/SAMURAI.jpg')}}" alt="samurai-koi-centre" class="btn-center" width="72px">
                     </div>
-                    <div class="col-md-4 text-left">
+                    <div class="col-xs-4">
                         <img src="{{ asset('frontend/img/KOIKICHIFISHFARM.jpg')}}" alt="koikichi-fish-farm" width="72px">
                     </div>
                 </div>
-                <br>
+                <div class="clearfix"></div>
                 <div class="col-md-12 stat-box">
                     <span class="stat">
                         <img src="{{ asset('frontend/Icon/Stat.png')}}" alt="" width="20px"> 
