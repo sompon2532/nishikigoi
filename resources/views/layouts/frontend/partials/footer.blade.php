@@ -15,8 +15,7 @@
 
                 <div class="text-about">
                     <p>We share the same believe that keeping koi should bring more fun and friends.</p>
-                    <p>So, we created the Nishikigoi Alliance where koi lovers around the world could get together</p>
-                    <p>and share the enjoyment of keeping koi.</p>
+                    <p>So, we created the Nishikigoi Alliance where koi lovers around the world could get together and share the enjoyment of keeping koi.</p>
                 </div>
 
                 <br />
