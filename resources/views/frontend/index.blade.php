@@ -50,7 +50,6 @@
         </div>
     @endif
 
-    <!-- <br> -->
     @if(count($nowEvents) > 0)
         <div class="col-md-12 {{ count($news) > 0 ? 'home-slide' : '' }}">
             <div id="myCarousel2" class="carousel slide" data-ride="carousel">
@@ -78,7 +77,7 @@
                     @endforeach
                 </div>
                 
-                @if((count($news)+count($nowEvents)) > 1)
+                @if(count($nowEvents) > 1)
                     <!-- Left and right controls -->
                     <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
                         <span class="fa fa-angle-left"></span>

@@ -9,9 +9,6 @@
         <div class="text-center in-midle-box">
             <div class="row">
                 <h3 class="text-red">ABOUT US</h3>
-                {{--<!-- <p>KOIKICHI FISH FARM</p>
-                <P>WE ARE A MEMBER OF</P>
-                <P>ALL JAPAN NISHIKIGOI PROMOTION ASSOCIATION</P> -->--}}
 
                 <div class="text-about">
                     <p>We share the same believe that keeping koi should bring more fun and friends.</p>

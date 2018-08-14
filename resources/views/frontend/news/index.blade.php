@@ -12,7 +12,6 @@
         <div class="text-center">
             <div class="title">
                 <img src="{{asset('frontend/img/News-Title.png')}}" alt="News" class="img-responsive">
-                <!-- <h1>NEWS</h1> -->
             </div>
         </div>
     </div>

@@ -15,19 +15,10 @@
                     <div class="col-md-10 col-md-offset-1">
                         <div class="card text-center">
                             <img src="{{ asset($media->getUrl()) }}" alt="{{ $events->name }}">
-                            {{--<!-- @else
-                                <img src="{{ asset('frontend/img/default-event-cover.jpg') }}" alt="{{ $events->name }}"> -->--}}
                         </div>
                     </div>
                 @endforeach
             @endif
-            {{--
-            <!-- <div class="title">
-                <h1>EVENT</h1>
-            </div>
-            <p>{{ $events->name }}</p>
-            <P>{{ $events->start_datetime->format('d/m/Y') }} TO {{ $events->end_datetime->format('d/m/Y') }}</P> -->
-            --}}
         </div>
     </div>
     <div class="col-md-offset-2 col-md-8">

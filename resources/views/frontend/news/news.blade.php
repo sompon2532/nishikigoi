@@ -8,11 +8,10 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-xs-offset-3 col-sm-offset-4 col-md-offset-4">
         <div class="text-center">
             <div class="title">
-                <h1>NEWS</h1>
-                <h1>{{$news->name}}</h1>
+                <img src="{{asset('frontend/img/News-Title.png')}}" alt="News" class="img-responsive">
             </div>
         </div>
     </div>
