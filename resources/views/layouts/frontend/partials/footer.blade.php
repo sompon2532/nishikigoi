@@ -8,7 +8,15 @@
     <div class="midle-box">
         <div class="text-center in-midle-box">
             <div class="row">
-                <h3 class="text-red">ABOUT US</h3>
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <div class="title title-box">
+                            <img src="{{asset('frontend/img/About-us-Title.png')}}" alt="Alliance" class="img-responsive" width="200">
+                        </div>
+                    </div>
+                </div>
+                <!-- <h3 class="text-red">ABOUT US</h3> -->
+
 
                 <div class="text-about">
                     <p>We share the same believe that keeping koi should bring more fun and friends.</p>
