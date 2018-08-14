@@ -44,7 +44,7 @@ p {
 .content-box {
     margin-top: 15px;
     margin-bottom: 15px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 20px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
@@ -198,7 +198,7 @@ span.stat {
     border-color: #f00;
 }
 
-.title-partner-box {
+.title-box {
     margin-bottom: 30px;
 }
 
@@ -265,6 +265,11 @@ span.stat {
     margin-bottom: 30px;
 }
 
+.caption-name {
+    max-height: 17px;
+    overflow: hidden;
+}
+
 
 /* .table-contact th {
     background-color: #eee;
@@ -273,7 +278,7 @@ span.stat {
 
 .koi-sj {
     display: block;
-    width: 75px;
+    width: 90px;
     float: left;
 }
 
@@ -389,8 +394,7 @@ a p {
     margin: 15px auto;
 }
 
-.text-about > p {
-    text-align: left;
+.text-about>p {
     margin: 0 20px 0 25px;
 }
 
@@ -423,10 +427,12 @@ a p {
     }
 }
 
+
 /* On screens that are 600px or less, set the background color to olive */
+
 @media screen and (max-width: 600px) {
-    .text-about > p {
-        text-align: left;
+    /* .text-about>p {
+        text-align: ce;
         margin: 0 20px 0 25px;
-    }
+    } */
 }

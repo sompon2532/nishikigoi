@@ -18,7 +18,7 @@
                     <p>So, we created the Nishikigoi Alliance where koi lovers around the world could get together and share the enjoyment of keeping koi.</p>
                 </div>
 
-                <br />
+                <br>
 
                 <div class="col-xs-10 col-sm-6 col-md-4 col-xs-offset-1 col-sm-offset-3 col-md-offset-4">
                     <div class="col-xs-4">

@@ -138,7 +138,8 @@
 
         @if(count($kois->remarks)>0)
             @foreach($kois->remarks as $remark)
-                @if($contest->remark != "")
+                @if($remark->remark != "")
+
                     <p>
                         <span class="koi-sj">REMARK</span>
                         : {{ $remark->remark }}

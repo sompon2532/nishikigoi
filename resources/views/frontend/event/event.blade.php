@@ -65,7 +65,7 @@
                             @endif
                         </a>
                         <div class="caption">
-                            <h4 class="text-red">{{ $koi->name }}</h4>
+                            <h4 class="text-red caption-name">{{ $koi->name }}</h4>
                             <p>BOOKING {{ count($koi->register) }}</p>
                             <p><a href="{{ route('frontend.event.koi', ['event' => Request::segment(2), 'koi' => $koi->id]) }}" class="btn btn-white" role="button">DETAIL</a></p>
                         </div>
