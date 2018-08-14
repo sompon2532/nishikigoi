@@ -5,7 +5,7 @@
         </a>
         <div class="logo-box-btn">
             <div class="col-xs-2 col-xs-offset-2 text-center">
-                <a href="{{ route('frontend.index') }}" class="btn-center" title="Event">
+                <a href="{{ route('frontend.index') }}" class="btn-center" title="Home">
                     <img class="img-responsive" src="{{ Request::segment(1) == '' ? asset('frontend/Icon/Home-red.png') :asset('frontend/Icon/Home-gray.png') }}" alt="" width="60px">
                 </a>
             </div>
