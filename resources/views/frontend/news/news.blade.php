@@ -10,8 +10,8 @@
 <div class="row">
     <div class="col-xs-6 col-sm-4 col-md-4 col-xs-offset-3 col-sm-offset-4 col-md-offset-4">
         <div class="text-center">
-            <div class="title">
-                <img src="{{asset('frontend/img/News-Title.png')}}" alt="News" class="img-responsive">
+            <div class="title title-box">
+                <img src="{{asset('frontend/img/News-Title.png')}}" alt="News" class="img-responsive" width="200">
             </div>
         </div>
     </div>
