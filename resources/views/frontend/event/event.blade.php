@@ -37,9 +37,19 @@
         @endif
     </div>
 
-    <div class="col-md-12">
+    {{--
+    <!-- <div class="col-md-12">
         <div class="title text-center">
             <h1>KOI</h1>
+        </div>
+    </div> -->
+    --}}
+
+    <div class="col-md-12">
+        <div class="text-center">
+            <div class="title-box">
+                <img src="{{asset('frontend/img/Koi-Title.png')}}" alt="Event" class="img-responsive" width="200">
+            </div>
         </div>
     </div>
 

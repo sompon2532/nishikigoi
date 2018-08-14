@@ -16,6 +16,7 @@
         </div>
     </div>
     <div class="col-md-12">
+        {{--
         <div class="col-md-10 col-md-offset-1">
             <div class="card text-center">
                 @if(count($news->media->where('collection_name', 'news-cover')) > 0)
@@ -23,6 +24,8 @@
                 @endif
             </div>
         </div>
+        --}}
+
         <div class="col-md-10 col-md-offset-1">
             <div class="card text-center">
                 @if(count($news->media->where('collection_name', 'news')) > 0)

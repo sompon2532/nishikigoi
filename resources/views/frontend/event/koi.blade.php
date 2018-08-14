@@ -10,11 +10,12 @@
 <div class="row">
     <div class="col-md-12">
         <div class="text-center event-title">
-            <div class="title">
-                <h1>EVENT</h1>
+            <div class="title title-box">
+                <img src="{{asset('frontend/img/Event-Title.png')}}" alt="Event" class="img-responsive" width="200">
+                <!-- <h1>EVENT</h1> -->
+                <p>{{ $events->name }}</p>
+                <P>{{ $events->start_datetime->format('d/m/Y') }} TO {{ $events->end_datetime->format('d/m/Y') }}</P>
             </div>
-            <p>{{ $events->name }}</p>
-            <P>{{ $events->start_datetime->format('d/m/Y') }} TO {{ $events->end_datetime->format('d/m/Y') }}</P>
         </div>
     </div>
 
@@ -137,11 +138,11 @@
         @endif
 
         @if(count($kois->remarks)>0)
-            @foreach($kois->remarks as $remark)
+            @foreach($kois->remarks as $index => $remark)
                 @if($remark->remark != "")
 
                     <p>
-                        <span class="koi-sj">REMARK</span>
+                        <span class="koi-sj">REMARK {{$index+1}}</span>
                         : {{ $remark->remark }}
                     </p>
                 @endif
