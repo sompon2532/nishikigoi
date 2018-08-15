@@ -108,7 +108,7 @@
                                     @else
                                         <a href="{{ route('event.koi.winner', ['event' => $event->id, 'koi' => $koi->id, 'register' => $register->id]) }}" class="btn btn-xs btn-default">award</a>
                                     @endif
-                                        <button data-token="{{ csrf_token() }}" data-id="{{ $register->id }}" data-url="1/delete" class="btn-delete btn btn-danger btn-xs">
+                                        <button data-token="{{ csrf_token() }}" data-id="{{ $register->id }}" data-url="{{ $koi->id }}/delete" class="btn-delete btn btn-danger btn-xs">
                                             <i class="fa fa-trash-o"></i>
                                         </button>
                                 </td>

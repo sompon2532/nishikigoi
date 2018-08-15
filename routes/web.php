@@ -25,15 +25,10 @@ Route::group(['prefix' => 'admin'], function() {
         Route::resource('category', 'CategoryController');
         Route::resource('news', 'NewsController');
 
-//        Route::delete('event/{event}/koi/{koi}/delete/{register}', [
-//            'as'   => 'event.koi.delete',
-//            'uses' => 'EventController@delete'
-//        ]);
-
-        Route::delete('event/{event}/koi/{koi}/delete/{register}', function() {
-            return 2;
-        });
-
+        Route::delete('event/{event}/koi/{koi}/delete/{register}', [
+            'as'   => 'event.koi.delete',
+            'uses' => 'EventController@delete'
+        ]);
         Route::get('event/{event}/koi/{koi}/winner/{register}', [
             'as'   => 'event.koi.winner',
             'uses' => 'EventController@winner'

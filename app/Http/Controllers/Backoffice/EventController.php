@@ -235,9 +235,9 @@ class EventController extends Controller
      * @param Register $register
      * @return \Illuminate\Http\RedirectResponse
      */
-//    public function delete(Event $event, Koi $koi, Register $register) {
-//        $register->delete();
-//
-//        return redirect()->back();
-//    }
+    public function delete(Event $event, Koi $koi, Register $register) {
+        $register->delete();
+
+        return redirect()->back();
+    }
 }
