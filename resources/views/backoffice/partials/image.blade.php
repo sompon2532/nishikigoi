@@ -17,7 +17,7 @@
 <div class="col-md-9">
     <div class="form-group">
         <label class="col-sm-2 control-label">
-            Image
+            Ad.
         </label>
         <div class="col-sm-10">
             <button type="button" class="add-file btn btn-warning btn-sm">Choose Image</button>
