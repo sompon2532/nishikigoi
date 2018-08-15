@@ -82,7 +82,7 @@
 
                         <div class="form-group">
                             <label for="born" class="col-sm-3 control-label">
-                                Bond <span class="text-danger">*</span>
+                                Born <span class="text-danger">*</span>
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="born" value="{{ old('born') }}" id="born"
@@ -91,10 +91,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="store" class="col-sm-3 control-label">Store</label>
+                            <label for="store" class="col-sm-3 control-label">Keeping At</label>
                             <div class="col-sm-9">
                                 <select class="form-control" name="store_id" id="store">
-                                    <option value="">-------- Choose Store --------</option>
+                                    <option value="">-------- Choose Keeping At --------</option>
                                     @foreach ($stores as $store)
                                         <option value="{{ $store->id }}">{{ $store->name }}</option>
                                     @endforeach
@@ -140,7 +140,7 @@
 
                         <div class="form-group">
                             <label for="oyagoi" class="col-sm-3 control-label">
-                                Oyagoi <span class="text-danger">*</span>
+                                Oyagoi
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="oyagoi" value="{{ old('oyagoi') }}" id="oyagoi"
