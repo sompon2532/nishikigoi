@@ -18,7 +18,7 @@ class Partner extends Model implements HasMedia
     /**
      * @var array
      */
-    protected $fillable = ['koikichi', 'description', 'address', 'strain', 'status', 'country_id'];
+    protected $fillable = ['koikichi', 'description', 'address', 'website', 'email', 'strain', 'status', 'country_id'];
 
     /**
      * @param $query

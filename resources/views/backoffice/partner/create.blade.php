@@ -48,11 +48,20 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">
-                                Website / Mail
+                            <label for="website" class="col-sm-3 control-label">
+                                Website
                             </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="address" rows="5" placeholder="Website / Mail"></textarea>
+                                <input type="text" class="form-control" name="website" id="website" placeholder="Website">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="col-sm-3 control-label">
+                                E-mail
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" name="email" id="email" placeholder="E-mail">
                             </div>
                         </div>
 
