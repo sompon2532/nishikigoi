@@ -10,12 +10,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">
-                        <div class="title title-box">
+                        <div class="title-box">
                             <img src="{{asset('frontend/img/About-us-Title.png')}}" alt="Alliance" class="img-responsive" width="200">
                         </div>
                     </div>
                 </div>
-                <!-- <h3 class="text-red">ABOUT US</h3> -->
+                {{--<!-- <h3 class="text-red">ABOUT US</h3> -->--}}
 
 
                 <div class="text-about">

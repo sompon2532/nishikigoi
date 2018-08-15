@@ -147,15 +147,15 @@ Route::group(['namespace' => 'Frontend'], function() {
         'uses'  => 'HomeController@Index'
     ]);
 
-    Route::get('contact-us', [
-        'as'    => 'frontend.home.contact-us',
-        'uses'  => 'HomeController@getContact'
-    ]);
+    // Route::get('contact-us', [
+    //     'as'    => 'frontend.home.contact-us',
+    //     'uses'  => 'HomeController@getContact'
+    // ]);
 
-    Route::get('news', [
-        'as'    => 'frontend.news.index',
-        'uses'  => 'NewsController@Index'
-    ]);
+    // Route::get('news', [
+    //     'as'    => 'frontend.news.index',
+    //     'uses'  => 'NewsController@Index'
+    // ]);
 
     Route::get('news/{news}', [
         'as'    => 'frontend.news.news',
@@ -182,15 +182,15 @@ Route::group(['namespace' => 'Frontend'], function() {
         'uses'  => 'EventController@getWinner'
     ]);
 
-    Route::get('partner', [
-        'as'    => 'frontend.partner.index',
-        'uses'  => 'PartnerController@Index'
-    ]);
+    // Route::get('partner', [
+    //     'as'    => 'frontend.partner.index',
+    //     'uses'  => 'PartnerController@Index'
+    // ]);
 
-    Route::get('partner/{partner}', [
-        'as'    => 'frontend.partner.detail',
-        'uses'  => 'PartnerController@getDetail'
-    ]);
+    // Route::get('partner/{partner}', [
+    //     'as'    => 'frontend.partner.detail',
+    //     'uses'  => 'PartnerController@getDetail'
+    // ]);
 
     Route::get('alliance', [
         'as'    => 'frontend.alliance.index',

@@ -28,19 +28,23 @@
                 <div class="col-sm-7 col-md-7">
                     <p>
                         <span class="partner-sj">FARM</span>
-                        : {{$alliance->koikichi}}
+                        : {{ $alliance->koikichi == "" ? 'No' : $alliance->koikichi}}
                     </p> 
                     <p>
                         <span class="partner-sj">ADDRESS</span>
-                        : {{$alliance->description}}
+                        : {{$alliance->description == "" ? 'No' : $alliance->description}}
                     </p> 
                     <p>
-                        <span class="partner-sj">WEBSITE / E-MAIL</span>
-                        : {{$alliance->address}}
+                        <span class="partner-sj">WEBSITE</span>
+                        : {{$alliance->website == "" ? 'No' : $alliance->website}}
+                    </p>
+                    <p>
+                        <span class="partner-sj">E-MAIL</span>
+                        : {{$alliance->email == "" ? 'No' : $alliance->email}}
                     </p>   
                     <p>
                         <span class="partner-sj">TEL</span>
-                        : {{$alliance->strain}}
+                        : {{$alliance->strain == "" ? 'No' : $alliance->strain}}
                     </p>  
                 </div>
 

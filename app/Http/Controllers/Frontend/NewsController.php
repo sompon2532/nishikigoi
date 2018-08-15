@@ -8,12 +8,12 @@ use App\Models\News;
 
 class NewsController extends Controller
 {
-    public function Index()
-    {
-        $news = News::with(['media'])->active()->orderBy('created_at', 'desc')->get();
+    // public function Index()
+    // {
+    //     $news = News::with(['media'])->active()->orderBy('created_at', 'desc')->get();
 
-        return view('frontend.news.index', compact('news'));
-    }
+    //     return view('frontend.news.index', compact('news'));
+    // }
 
     public function getNews($news)
     {

@@ -73,11 +73,11 @@ class HomeController extends Controller
         return view('frontend.index', compact('calendar', 'news', 'nowEvents'));
     }
 
-    public function getContact()
-    {
-        $eventdays  = new Eventday();
-        $calendar   = $eventdays->calendar;
+    // public function getContact()
+    // {
+    //     $eventdays  = new Eventday();
+    //     $calendar   = $eventdays->calendar;
 
-        return view('frontend.home.contact-us', compact('calendar'));
-    }
+    //     return view('frontend.home.contact-us', compact('calendar'));
+    // }
 }
