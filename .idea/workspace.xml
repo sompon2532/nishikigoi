@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="742f3363-f970-4ad7-ab40-830d232be831" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Backoffice/EventController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backoffice/EventController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,14 +14,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EventController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="236" column="17" lean-forward="false" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
+            <state relative-caret-position="369">
+              <caret line="237" column="6" lean-forward="false" selection-start-line="237" selection-start-column="6" selection-end-line="241" selection-end-column="7" />
               <folding>
                 <element signature="e#51#79#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -29,7 +40,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ชื่อStore</find>
       <find>รหัสปลา</find>
       <find>เจ้าของปลา</find>
       <find>ราการปลา</find>
@@ -59,6 +69,7 @@
       <find>@</find>
       <find>respons</find>
       <find>style.css</find>
+      <find>delete</find>
     </findStrings>
     <replaceStrings>
       <replace>Time End</replace>
@@ -147,7 +158,6 @@
         <option value="$PROJECT_DIR$/resources/views/backoffice/partner/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backoffice/partner/update.blade.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -160,6 +170,7 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/frontend/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/public/frontend/style.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backoffice/EventController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -306,12 +317,12 @@
       <workItem from="1533875932267" duration="334000" />
       <workItem from="1533961157476" duration="3323000" />
       <workItem from="1534076379904" duration="16000" />
-      <workItem from="1534295316572" duration="306000" />
+      <workItem from="1534295316572" duration="542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59449000" />
+    <option name="totallyTimeSpent" value="59685000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="712" extended-state="6" />
@@ -574,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4278">
-          <caret line="195" column="25" lean-forward="false" selection-start-line="195" selection-start-column="25" selection-end-line="195" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_07_173359_add_demos_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -702,11 +706,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backoffice/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="236" column="17" lean-forward="false" selection-start-line="236" selection-start-column="17" selection-end-line="236" selection-end-column="17" />
+        <state relative-caret-position="369">
+          <caret line="237" column="6" lean-forward="false" selection-start-line="237" selection-start-column="6" selection-end-line="241" selection-end-column="7" />
           <folding>
             <element signature="e#51#79#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

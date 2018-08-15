@@ -229,11 +229,15 @@ class EventController extends Controller
         return redirect()->back();
     }
 
-    public function delete(Event $event, Koi $koi, Register $register) {
+    /**
+     * @param Event $event
+     * @param Koi $koi
+     * @param Register $register
+     * @return \Illuminate\Http\RedirectResponse
+     */
+//    public function delete(Event $event, Koi $koi, Register $register) {
 //        $register->delete();
 //
 //        return redirect()->back();
-
-        return 1;
-    }
+//    }
 }
