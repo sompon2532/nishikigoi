@@ -230,9 +230,10 @@ class EventController extends Controller
     }
 
     public function delete(Event $event, Koi $koi, Register $register) {
-        dd($koi);
-        $register->delete();
+//        $register->delete();
+//
+//        return redirect()->back();
 
-        return redirect()->back();
+        return 1;
     }
 }
