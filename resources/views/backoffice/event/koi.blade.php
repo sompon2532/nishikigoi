@@ -54,7 +54,7 @@
                                                     contact
                                                 </label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" value="{{ old('phone') }}">
+                                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Contact" value="{{ old('phone') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -79,7 +79,7 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>member</th>
+                            <th>Member</th>
                             <th>Contact</th>
                             <th>Status</th>
                             <th>Management</th>
@@ -118,8 +118,8 @@
                         <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>member</th>
-                            <th>tel.</th>
+                            <th>Member</th>
+                            <th>Contact</th>
                             <th>Status</th>
                             <th>Management</th>
                         </tr>
