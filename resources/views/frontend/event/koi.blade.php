@@ -64,10 +64,6 @@
     </div>
 
     <div class="col-sm-6 col-md-6">
-        @if(count($kois->register->where('winner', 1))>0)
-            <span class="soldout">SOLD OUT</span>
-        @endif
-        
         <p class="text-red">{{ $kois->name }}{{ $kois->certificate == 1 ? ' [+CERTIFICATE]':''}}</p>
         
         <p>
