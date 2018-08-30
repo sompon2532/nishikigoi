@@ -64,10 +64,21 @@
                             @else
                                 <img src="{{ asset('frontend/img/default-koi.jpg') }}" alt="{{ $koi->name }}">                                                   
                             @endif
+                            @if(count($koi->register)>0)
+                            <!-- <div class="overlay"> -->
+                                <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
+                            <!-- </div> -->
+                            @endif
                         </a>
                         <div class="caption">
                             <h4 class="text-red caption-name">{{ $koi->name }}</h4>
-                            <p>BOOKING {{ count($koi->register) }}</p>
+                                @if($koi->register)
+                                    @if(count($koi->register->where('winner', 1))>0)
+                                        <span class="soldout">SOLD OUT</span>
+                                    @else
+                                        <p>BOOKING {{ count($koi->register) }}</p>
+                                    @endif
+                                @endif
                             <p><a href="{{ route('frontend.event.koi', ['event' => Request::segment(2), 'koi' => $koi->id]) }}" class="btn btn-white" role="button">DETAIL</a></p>
                         </div>
                     </div>

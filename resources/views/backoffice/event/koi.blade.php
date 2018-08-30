@@ -51,7 +51,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="phone" class="col-sm-3 control-label">
-                                                    tel.
+                                                    contact
                                                 </label>
                                                 <div class="col-sm-9">
                                                     <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" value="{{ old('phone') }}">
@@ -80,7 +80,7 @@
                         <tr>
                             <th>#</th>
                             <th>member</th>
-                            <th>tel.</th>
+                            <th>Contact</th>
                             <th>Status</th>
                             <th>Management</th>
                         </tr>

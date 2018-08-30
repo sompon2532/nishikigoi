@@ -82,7 +82,11 @@ class EventController extends Controller
         $nowDateTime = explode(' ', $now);
         $endDateTime = explode(' ', $events->end_datetime);
 
-        // dd($kois->first()->register);
+        $kois->load(['register' => function($query) use($events) {
+            $query->where('event_id', $events->id)->where('winner', 1);
+        }]);
+
+        // dd($kois);
 
         if($nowDateTime[0] > $endDateTime[0]) {
             return view('frontend.event.winner', compact('calendar', 'events', 'kois')); //Pass
@@ -104,7 +108,13 @@ class EventController extends Controller
         $calendar   = $eventdays->calendar;
 
         $events = Event::find($event);
-        $kois = Koi::with(['media'])->active()->where('id', $koi)->find($koi);
+        $kois = Koi::with(['media'])->active()->find($koi);
+
+        $kois->load(['register' => function($query) use($events) {
+            $query->where('event_id', $events->id);
+        }]);
+
+        // dd($kois);
 
         return view('frontend.event.koi', compact('calendar', 'events', 'kois'));
     }

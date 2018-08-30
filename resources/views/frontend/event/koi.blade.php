@@ -11,7 +11,7 @@
     <div class="col-md-12">
         <div class="text-center event-title">
             <div class="title title-box">
-                <img src="{{asset('frontend/img/Event-Title.png')}}" alt="Event" class="img-responsive" width="200">
+                <img src="{{asset('frontend/img/Event-Title.png')}}" alt="Event" class="img-responsive" width="200" style="margin:auto;">
                 <!-- <h1>EVENT</h1> -->
                 <p>{{ $events->name }}</p>
                 <P>{{ $events->start_datetime->format('d/m/Y') }} TO {{ $events->end_datetime->format('d/m/Y') }}</P>
@@ -30,6 +30,9 @@
                     </div>
                 @endforeach
             </div>
+            @if(count($kois->register)>0)
+                <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
+            @endif
             @if(count($kois->media)>1)
                 <div class="slider slider-nav">
                     @foreach($kois->media as $media)
@@ -39,6 +42,9 @@
             @endif
         @else
             <img class="img-responsive center-box" src="{{ asset('frontend/img/default-koi.jpg') }}" alt="..." style="width:80%">
+            @if(count($kois->register)>0)
+                <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
+            @endif
         @endif
 
         @if(count($kois->videos)>0)
@@ -58,6 +64,10 @@
     </div>
 
     <div class="col-sm-6 col-md-6">
+        @if(count($kois->register->where('winner', 1))>0)
+            <span class="soldout">SOLD OUT</span>
+        @endif
+        
         <p class="text-red">{{ $kois->name }}{{ $kois->certificate == 1 ? ' [+CERTIFICATE]':''}}</p>
         
         <p>

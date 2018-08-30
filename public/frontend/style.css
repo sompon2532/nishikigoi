@@ -399,6 +399,25 @@ a p {
     margin: 0 20px 0 25px;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+    padding: 15px;
+}
+
+.soldout {
+    color: #fff;
+    background-color: #f00;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 @media (max-width: 991px) {
     .logo-box-btn img {
         width: 65%;
