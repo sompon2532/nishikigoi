@@ -64,11 +64,6 @@
                             @else
                                 <img src="{{ asset('frontend/img/default-koi.jpg') }}" alt="{{ $koi->name }}">                                                   
                             @endif
-                            @if(count($koi->register)>0)
-                            <!-- <div class="overlay"> -->
-                                <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
-                            <!-- </div> -->
-                            @endif
                         </a>
                         <div class="caption">
                             <h4 class="text-red caption-name">{{ $koi->name }}</h4>
