@@ -30,8 +30,10 @@
                     </div>
                 @endforeach
             </div>
-            @if(count($kois->register)>0)
-                <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
+            @if($kois->register)
+                @if(count($kois->register->where('winner', 1))>0)
+                    <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
+                @endif
             @endif
             @if(count($kois->media)>1)
                 <div class="slider slider-nav">
@@ -42,8 +44,10 @@
             @endif
         @else
             <img class="img-responsive center-box" src="{{ asset('frontend/img/default-koi.jpg') }}" alt="..." style="width:80%">
-            @if(count($kois->register)>0)
-                <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
+            @if($kois->register)
+                @if(count($kois->register->where('winner', 1))>0)
+                    <img src="{{ asset('frontend/img/SoldOut-B.png') }}" class="overlay">
+                @endif
             @endif
         @endif
 
