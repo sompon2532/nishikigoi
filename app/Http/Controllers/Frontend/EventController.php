@@ -83,7 +83,7 @@ class EventController extends Controller
         $endDateTime = explode(' ', $events->end_datetime);
 
         $kois->load(['register' => function($query) use($events) {
-            $query->where('event_id', $events->id)->where('winner', 1);
+            $query->where('event_id', $events->id);
         }]);
 
         // dd($kois);
@@ -111,7 +111,7 @@ class EventController extends Controller
         $kois = Koi::with(['media'])->active()->find($koi);
 
         $kois->load(['register' => function($query) use($events) {
-            $query->where('event_id', $events->id);
+            $query->where('event_id', $events->id)->where('winner', 1);
         }]);
 
         // dd($kois);
