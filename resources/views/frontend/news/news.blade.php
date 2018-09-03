@@ -41,7 +41,9 @@
     @if(count($news->videos)>0)
         <div class="col-md-12 text-center">
             @foreach($news->videos as $video)
-                {!! $video->video !!}
+                <div class="embed-responsive embed-responsive-16by9">
+                    {!! $video->video !!}
+                </div>
             @endforeach
         </div> 
     @endif
