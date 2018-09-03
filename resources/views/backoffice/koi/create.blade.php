@@ -154,7 +154,7 @@
                             </label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="price" value="{{ old('price') }}" id="price"
-                                       placeholder="Unit">
+                                       placeholder="Price">
                             </div>
                         </div>
 
