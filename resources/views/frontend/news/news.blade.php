@@ -40,11 +40,13 @@
     </div>   
     @if(count($news->videos)>0)
         <div class="col-md-12 text-center">
-            @foreach($news->videos as $video)
-                <div class="embed-responsive embed-responsive-16by9">
-                    {!! $video->video !!}
-                </div>
-            @endforeach
+            <div class="col-md-10 col-md-offset-1">
+                @foreach($news->videos as $video)
+                    <div class="embed-responsive embed-responsive-16by9">
+                        {!! $video->video !!}
+                    </div>
+                @endforeach
+            </div> 
         </div> 
     @endif
 </div>
