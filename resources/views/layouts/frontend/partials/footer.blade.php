@@ -41,7 +41,7 @@
                     <span class="stat">
                         <img src="{{ asset('frontend/Icon/Stat.png')}}" alt="" width="20px"> 
                         {{--<!-- <a href="https://smallseotools.com/visitor-hit-counter/" target="_blank" title="Web Counter"> -->--}}
-                        <img src="https://smallseotools.com/counterDisplay?code=5ae73e4c97220751c82c87dfb696a04e&style=0013&pad=5&type=page&initCount=1000"  title="Web Counter" Alt="Web Counter" border="0">
+                        <img src="https://smallseotools.com/counterDisplay?code=5ae73e4c97220751c82c87dfb696a04e&style=0013&pad=7&type=ip&initCount=38640"  title="Web Counter" Alt="Web Counter" border="0">
                         {{--<!-- </a> -->--}}
                     </span>
                 </div>
